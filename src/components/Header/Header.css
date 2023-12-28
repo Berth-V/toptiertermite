@@ -1,0 +1,124 @@
+.nav {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--margin-top-size);
+  background-color: var(--thrid-color);
+  display: flex;
+  justify-content: start;
+}
+
+.menu__btn {
+  height: 40px;
+  width: 45px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  font-size: 45px;
+  padding: 0;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav__ul {
+  display: flex;
+  position: absolute;
+  width: 19rem;
+  height: 100%;
+  list-style: none;
+  margin-left: 3rem;
+}
+
+.nav__li {
+  width: auto;
+  height: auto;
+  margin-right: 1.5rem;
+}
+
+.nav__link {
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+}
+
+.nav__link:hover {
+  color: var(--secondary-color);
+}
+
+.nav__span {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 685px) {
+  .nav {
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--primary-color);
+    position: absolute;
+    align-items: center;
+    border-right: 2px solid var(--secondary-color);
+  }
+
+  .menu__btn {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    padding: 2px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .nav__ul {
+    position: unset;
+    height: 350px;
+    flex-direction: column;
+  }
+
+  .nav__icon {
+    display: none;
+  }
+
+  .nav__span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .nav {
+    height: 40px;
+  }
+
+  .menu__btn {
+    height: 35px;
+    width: 35px;
+    font-size: 35px;
+    padding: 0;
+    left: 5px;
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .menu__btn {
+    height: 33px;
+    width: 33px;
+    font-size: 33px;
+  }
+}
