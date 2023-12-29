@@ -36,23 +36,23 @@ function Home() {
       </section>
       <section className='home__section3'>
         <div className='home__section3__box'>
-          <div className='home__section3__item'>
-            <div className='home__icon__container'>
-              <FaHelmetSafety className='home__icon' />
+          <div className='home__section3__item--first'>
+            <div className='home__icon__container--first'>
+              <FaHelmetSafety className='home__icon--first' />
             </div>
-            <div className='home__section3__text'>
-              <h3 className='home__section3__h3'>Loremipsum</h3>
-              <span className='home__section3__span'>
+            <div className='home__section3__text--first'>
+              <h3 className='home__section3__h3--first'>Loremipsum</h3>
+              <span className='home__section3__span--first'>
                 Lorem ipsumdolor arneus dochakat lorem lreom upsum dolor lorem
                 ipsum dolor lorem ipsum dolor
               </span>
             </div>
           </div>
-          <div className='home__section3__item'>
-            <div className='home__icon__container'>
-              <BiBadgeCheck className='home__icon' />
+          <div className='home__section3__item--second'>
+            <div className='home__icon__container--second'>
+              <BiBadgeCheck className='home__icon--second' />
             </div>
-            <div className='home__section3__text'>
+            <div className='home__section3__text--second'>
               <h3 className='home__section3__h3'>Loremipsum</h3>
               <span className='home__section3__span'>
                 Lorem ipsumdolor arneus dochakat lreom upsum dolor lorem ipsum
@@ -144,26 +144,26 @@ function Home() {
           </p>
         </div>
         <div className='home__section5__box--second'>
-          <h3 className='home__section5__h3'>Lorem Ipsum</h3>
-          <span className='home__section5__span'>
-            <FaCheck className='home__section5__icon' />
-            Lorem ipsum dolor ibus frog
+          <h3 className='home__section5__h3--second'>Lorem Ipsum</h3>
+          <span className='home__section5__span--second'>
+            <FaCheck className='home__section5__icon--second' />
+            Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section5__span'>
-            <FaCheck className='home__section5__icon' />
-            Lorem ipsum dolor ibus frog
+          <span className='home__section5__span--second'>
+            <FaCheck className='home__section5__icon--second' />
+            Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section5__span'>
-            <FaCheck className='home__section5__icon' />
-            Lorem ipsum dolor ibus frog
+          <span className='home__section5__span--second'>
+            <FaCheck className='home__section5__icon--second' />
+            Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section5__span'>
-            <FaCheck className='home__section5__icon' />
-            Lorem ipsum dolor ibus frog
+          <span className='home__section5__span--second'>
+            <FaCheck className='home__section5__icon--second' />
+            Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section5__span'>
-            <FaCheck className='home__section5__icon' />
-            Lorem ipsum dolor ibus frog
+          <span className='home__section5__span--second'>
+            <FaCheck className='home__section5__icon--second' />
+            Lorem ipsum dolor ipsum
           </span>
         </div>
         <div className='home__section5__box'>
