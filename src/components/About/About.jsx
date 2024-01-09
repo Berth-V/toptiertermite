@@ -1,142 +1,37 @@
 import '../About/About.css';
-import PrevButton from '../Shared/PrevButton/PrevButton';
-import NextButton from '../Shared/NextButton/NextButton';
-import {motion} from 'framer-motion';
-import {DiHtml5, DiCss3, DiJavascript} from 'react-icons/di';
-import {SiReact, SiFramer} from 'react-icons/si';
-import {BsGit} from 'react-icons/bs';
-import {AiFillGithub} from 'react-icons/ai';
+import about1 from '../../assets/about1.jpg';
 
 function About() {
-  //Framer Motion Variants//
-  const skillsAnimation = {
-    start: {scale: 0},
-    onStay: {
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-    leave: {scale: 0},
-  };
-
   return (
     <div className='about'>
-      <div className='about__content'>
-        <motion.div
-          className='about__description'
-          /*Framer Motions Attributtes*/
-          variants={skillsAnimation}
-          initial='start'
-          animate='onStay'
-          exit='leave'
-        >
-          <motion.h1
-            className='about__h1'
-            /*Framer Motions Attributtes*/
-            variants={skillsAnimation}
-          >
-            About
-          </motion.h1>
-          <motion.p
-            className='about__p'
-            /*Framer Motions Attributtes*/
-            variants={skillsAnimation}
-          >
-            Hi again, my name is Albert, i am 26 years old at present and i was
-            born and growed in the city of Tijuana, Baja California, México.
-            <br />
-            I am a self-learning front-end developer, but at my free time
-            i&rsquo;m actually learning new areas like back-end, and i also
-            interested to learn mobile aplications dev.
-            <br />I have a pair of hobbies, but i think that the most
-            outstanding one, will be dancing, i have beeing in a folclorick
-            dance group since my 12 years and i like to express my self by that
-            way.
-          </motion.p>
-        </motion.div>
-        <motion.hr
-          className='separator'
-          /*Framer Motions Attributtes*/
-          variants={skillsAnimation}
-          initial='start'
-          animate='onStay'
-          exit='leave'
-        />
-        <motion.div
-          className='about__skills'
-          /*Framer Motions Attributtes*/
-          variants={skillsAnimation}
-          initial='start'
-          animate='onStay'
-          exit='leave'
-        >
-          <h1 className='about__h1'>Skills</h1>
-          <div className='about__ul'>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <DiHtml5 className='about__icon' />
-              <span className='icon__span'>HTML</span>
-            </motion.div>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <DiCss3 className='about__icon' />
-              <span className='icon__span'>CSS</span>
-            </motion.div>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <DiJavascript className='about__icon' />
-              <span className='icon__span'>Javascript</span>
-            </motion.div>
-          </div>
-          <div className='about__ul'>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <SiReact className='about__icon' />
-              <span className='icon__span'>React Js</span>
-            </motion.div>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <SiFramer className='about__icon' />
-              <span className='icon__span'>Framer Motion</span>
-            </motion.div>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <BsGit className='about__icon' />
-              <span className='icon__span'>Git</span>
-            </motion.div>
-            <motion.div
-              className='about__li'
-              /*Framer Motions Attributtes*/
-              variants={skillsAnimation}
-            >
-              <AiFillGithub className='about__icon' />
-              <span className='icon__span'>Github</span>
-            </motion.div>
-          </div>
-        </motion.div>
+      <div className='about__section1'>
+        <div className='about__img1__container'>
+          <img className='about__img1' src={about1} alt='' />
+        </div>
+        <h2 className='about__h2'>About Us</h2>
       </div>
-      <PrevButton to='/' />
-      <NextButton to='/projects' />
+      <p className='about__p'>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quas
+        id rerum voluptatem explicabo laboriosam aperiam eum, placeat reiciendis
+        natus? Nemo dolorum voluptatum hic eveniet quasi blanditiis aliquam vero
+        quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        amet dicta possimus incidunt repellendus velit magnam dolorem quia
+        animi. <br />
+        <br />
+        Voluptas nobis itaque tempore sunt cum vitae minima perspiciatis,
+        voluptatem eligendi? Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Totam explicabo aperiam rem fugiat ad nisi consequatur ratione
+        pariatur, nesciunt reprehenderit optio et corporis porro saepe tenetur
+        autem voluptatibus consequuntur esse.
+        <br />
+        <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Molestiae itaque, nostrum repellat rem sunt eum voluptates illo.
+        Eligendi, perspiciatis aut temporibus neque reiciendis cumque aliquam
+        rerum alias, id similique mollitia! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Aspernatur maxime animi consectetur dicta
+        illum neque iste totam soluta, tempore tenetur voluptas quasi cumque
+        labore harum in, vero quo quia iure.
+      </p>
     </div>
   );
 }

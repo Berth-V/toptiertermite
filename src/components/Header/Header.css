@@ -1,13 +1,14 @@
 .nav {
-  position: absolute;
+  position: sticky;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100vw;
   height: var(--margin-top-size);
-  background-color: var(--thrid-color);
+  background-color: white;
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  border-bottom: 1px solid black
 }
 
 .menu__btn {
@@ -21,7 +22,6 @@
   align-items: center;
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
-  color: var(--secondary-color);
   font-size: 45px;
   padding: 0;
   z-index: 10;
@@ -29,13 +29,18 @@
   user-select: none;
 }
 
+.logo{
+  height: 4.9rem;
+}
+
 .nav__ul {
   display: flex;
-  position: absolute;
   width: 19rem;
   height: 100%;
   list-style: none;
-  margin-left: 3rem;
+  position: absolute;
+  left: 3rem;
+
 }
 
 .nav__li {
@@ -52,7 +57,7 @@
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--thrid-color);
   transition-property: all;
   transition-timing-function: ease;
   transition-duration: 0.3s;
@@ -64,6 +69,7 @@
 
 .nav__span {
   font-size: 1.1rem;
+  color: var(--third-color);
 }
 
 @media screen and (max-width: 685px) {

@@ -1,6 +1,6 @@
 import Home from '../Home/Home';
 import About from '../About/About';
-import Projects from '../Projects/Projects';
+import Services from '../Services/Services';
 import Contact from '../Contact/Contact';
 import {useContext, useEffect} from 'react';
 import {Route, Routes, Navigate, useLocation} from 'react-router-dom';
@@ -22,7 +22,7 @@ function TransitionRoutes() {
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Navigate to='/' />} />
         <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </AnimatePresence>

@@ -15,8 +15,21 @@
   justify-content: center;
 }
 
-.home__h1 {
-  display: none;
+.home__section2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 95dvh; 
+}
+
+.home__section1__text{
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 3.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .home__frontpage{
@@ -27,46 +40,51 @@
   width: 45rem;
 }
 
-.purpple__square{
-  position: absolute;
-  z-index: 1;
-  margin-bottom: 5rem;
-  margin-left: 10rem;
-  height: 30rem;
-  width: 45rem;
-  background-color: var(--secondary-color);
+.section1__icon{
+  font-size: 2rem;
+  margin-right: .5rem;
 }
 
-.home__section2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.home__h1 {
+  display: none;
 }
 
 .home__h2{
-  margin-right: 20rem;
   font-weight: 700;
   font-size: 3.3rem;
-  color: var(--secondary-color);
+  color: white;
+  margin-right: 5rem;
+  margin-bottom: 1rem;
+  width: 45rem;
 }
 
 .home__b{
   font-weight: 700;
-  color: black;
+  color: white;
 }
 
 .home__h3{
-  font-weight: 400;
-  color: black;
-  font-size: 2rem;
-  margin-right: 21rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #07C704;
+  margin-right: 5rem;
+  margin-bottom: 1rem;
 }
 
 .home__p{
   font-size: 1.4rem;
-  color: black;
+  color: white;
   width: 48rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+}
+
+.section1__btn{
+  margin-right: 5rem;
+  color: white;
+  font-size: 1.5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: #07C704;
 }
 
 .home__section3{
@@ -88,8 +106,10 @@
 }
 
 .home__section3__item,
-.home__section3__item--first,
-.home__section3__item--second{
+.home__section3__item--blue,
+.home__section3__item--second,
+.home__section3__item--fiveth,
+.home__section3__item--sixth{
   min-width: 32rem;
   height: 22rem;
   border-radius: 3rem;
@@ -101,13 +121,23 @@
   box-shadow: .3rem .3rem black black;
 }
 
-.home__section3__item--first{
+.home__section3__item--blue{
   background-color: #0030CF;
 }
 
+.home__section3__item--fiveth{
+  background-color: #242424;
+}
+
+.home__section3__item--sixth{
+  background-color: var(--secondary-color);
+}
+
 .home__icon__container,
-.home__icon__container--first,
-.home__icon__container--second{
+.home__icon__container--blue,
+.home__icon__container--second,
+.home__icon__container--fiveth,
+.home__icon__container--sixth{
   width: 5rem;
   height: 5rem;
   display: flex;
@@ -118,20 +148,31 @@
   background-color: var(--secondary-color);
 }
 
+.home__icon__container--blue{
+  background-color: black;
+}
 
-.home__icon__container--second{
+.home__icon__container--fiveth{
+  background-color: #0030CF;
+}
+
+.home__icon__container--sixth{
   background-color: black;
 }
 
 .home__icon,
-.home__icon--first,
-.home__icon--second{
+.home__icon--blue,
+.home__icon--second,
+.home__icon--fiveth,
+.home__icon--sixth{
   font-size: 2.5rem;
 }
 
 .home__section3__text,
-.home__section3__text--first,
-.home__section3__text--second{
+.home__section3__text--blue,
+.home__section3__text--second,
+.home__section3__text--fiveth,
+.home__section3__text--sixth{
   height: auto;
   text-align: center;
   width: 20rem;
@@ -139,12 +180,22 @@
   color: black;
 }
 
-.home__section3__text--second{
+.home__section3__text--blue{
+  color: white;
+}
+
+.home__section3__text--fiveth{
+  color: white;
+}
+
+.home__section3__text--sixth{
   color: white;
 }
 
 .home__section3__h3,
-.home__section3__h3--first{
+.home__section3__h3--blue,
+.home__section3__h3--fiveth,
+.home__section3__h3--sixth{
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -157,11 +208,10 @@
   display: flex;
   height: auto;
   justify-content: center;
-  background-color: #3FB12A;
 }
 
 .home__section4__box{
-  width: 45rem;
+  width: 40rem;
   height: 50rem;
   margin: 5rem 2rem;
   border-radius: 1rem;
@@ -175,7 +225,7 @@
 
 .home__section4__h3{
   font-size: 3.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .home__section4__p{
@@ -188,8 +238,15 @@
   margin-top: 5rem;
   font-size: 1.2rem;
   border-radius: .5rem;
-  color: var(--primary-color);
-  background-color: #3FB12A;
+  color: white;  
+  border: 3px solid green;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.home__section4__btn:hover{
+  background-color: green;
+  color: white;
 }
 
 .home__section5{
