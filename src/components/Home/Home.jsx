@@ -1,10 +1,11 @@
 import './Home.css';
-import {NavLink} from 'react-router-dom';
-import frontpage from '../../assets/frontpage.jpg';
+import logo from '../../assets/toptierlogo.jpg';
+import frontpage from '../../assets/frontpage1.jpg';
 import home4back from '../../assets/home4back2.jpg';
 import pesticide from '../../assets/pesticide.png';
 import termite from '../../assets/termite.png';
 import section3back from '../../assets/section3back.jpg';
+import {NavLink} from 'react-router-dom';
 import {FaHelmetSafety} from 'react-icons/fa6';
 import {BiBadgeCheck} from 'react-icons/bi';
 import {BiCalendarEvent} from 'react-icons/bi';
@@ -36,7 +37,7 @@ function Home() {
           </h2>
           <h3 className='home__h3'>
             <FaPhone className='section1__icon' />
-            +1 (619) 555 18 95.
+            +1 (619) 555 18 95
           </h3>
           <p className='home__p'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit provident
@@ -46,6 +47,7 @@ function Home() {
           </p>
           <NavLink className='section1__btn'> Learn More</NavLink>
         </div>
+        <img className='home__section1__logo' src={logo} alt="" />
       </section>
       <section className='home__section'></section>
       <section className='home__section3'>

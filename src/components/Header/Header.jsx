@@ -2,7 +2,7 @@ import './Header.css';
 //import {useState} from 'react';//
 import {NavLink} from 'react-router-dom';
 import {motion} from 'framer-motion';
-import logo from '../../assets/toptierlogo.jpg';
+import logo from '../../assets/toptierlogo2.jpg';
 
 function Header() {
   //const [isMenuOpen, setIsMenuOpen] = useState(true);//
