@@ -8,12 +8,13 @@
 }
 
 .form{
-  height: 40rem;
-  width: 50rem;
+  height: 45rem;
+  width: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-color);
+  background: rgb(162,48,255);
+  background: linear-gradient(132deg, rgba(162,48,255,1) 0%, rgba(128,16,198,1) 26%, rgba(58,0,92,1) 100%);
 }
 
 .contact__h2 {
@@ -28,12 +29,16 @@
   border: none;
   font-size: 1rem;
   background: unset;
-  border-bottom: .1rem solid gray;
+  border-bottom: .1rem solid #A4A4A4;
+}
+
+.form__input::placeholder{
+  color: #A4A4A4;
 }
 
 .form__input:focus{
   outline: none;
-  border-bottom: .1rem solid #07C704;;
+  border-bottom: .1rem solid #A4A4A4;
 }
 
 .form__input--message{
@@ -44,27 +49,31 @@
   resize: none;
   font-size: 1rem;
   background: unset;
-  border-bottom: .1rem solid gray;
+  border-bottom: .1rem solid #A4A4A4;
+}
+.form__input--message::placeholder{
+  color: #A4A4A4;
 }
 
 .form__input--message:focus{
   outline: none;
-  border-bottom: .1rem solid #07C704;;
+  border-bottom: .1rem solid #A4A4A4;
 }
 
 .form__submit{
   font-size: 1.4rem;
   margin-top: 1rem;
-  background-color: unset;
-  border: .2rem solid #07C704;
+  border: none;
   padding: .5rem;
-  border-radius: .5rem;
+  border-radius: .3rem;
   transition-timing-function: ease-out;
   transition-duration: .2s;
+  background: rgb(227,213,0);
+background: linear-gradient(132deg, rgba(227,213,0,1) 0%, rgba(255,218,47,1) 26%, rgba(227,106,0,1) 100%);
 }
 
 .form__submit:hover{
-  background-color: #07C704;
+  background-color: #E3D500;
 }
 
 .contact__info{
@@ -91,7 +100,7 @@
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  border: .2rem solid #07C704;
+  border: .2rem solid #E3D500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +109,7 @@
 }
 
 .icon__item:hover{
-  background-color: #07C704;
+  background-color: #E3D500;
 }
 
 .contact__icon{

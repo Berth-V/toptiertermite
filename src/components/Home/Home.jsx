@@ -1,5 +1,5 @@
 import './Home.css';
-import logo from '../../assets/toptierlogo.jpg';
+import logo from '../../assets/toptierlogo3.jpg';
 import frontpage from '../../assets/frontpage1.jpg';
 import home4back from '../../assets/home4back2.jpg';
 import pesticide from '../../assets/pesticide.png';
@@ -30,24 +30,26 @@ function Home() {
             `,
         }}
       >
-        <div className='home__section1__text'>
-          <h2 className='home__h2'>
-            <b className='home__b'>Lorem</b> ipsumdolor apsumrial frederic epson
-            frednich
-          </h2>
-          <h3 className='home__h3'>
-            <FaPhone className='section1__icon' />
-            +1 (619) 555 18 95
-          </h3>
-          <p className='home__p'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit provident
-            nam dolorum enim sit aut quod accusamus voluptate praesentium esse
-            quis nostrum dolorem! Odit voluptatum, maxime non itaque doloribus
-            quasi exercitationem.
-          </p>
-          <NavLink className='section1__btn'> Learn More</NavLink>
+        <div className='home__background__opacity'>
+          <div className='home__section1__text'>
+            <h2 className='home__h2'>
+              <b className='home__b'>Lorem</b> ipsumdolor apsumrial frederic
+              epson frednich
+            </h2>
+            <h3 className='home__h3'>
+              <FaPhone className='section1__icon' />
+              +1 (619) 555 18 95
+            </h3>
+            <p className='home__p'>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit provident
+              nam dolorum enim sit aut quod accusamus voluptate praesentium esse
+              quis nostrum dolorem! Odit voluptatum, maxime non itaque doloribus
+              quasi exercitationem.
+            </p>
+            <NavLink className='section1__btn'> Learn More</NavLink>
+          </div>
+          <img className='home__section1__logo' src={logo} alt='' />
         </div>
-        <img className='home__section1__logo' src={logo} alt="" />
       </section>
       <section className='home__section'></section>
       <section className='home__section3'>

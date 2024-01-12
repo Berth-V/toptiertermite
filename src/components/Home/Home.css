@@ -18,8 +18,18 @@
 .home__section2{
   display: flex;
   height: 95dvh;
+  width: 100vw;
   align-items: center;
+  justify-content: center; 
+}
+
+.home__background__opacity{
+  display: flex;
+  height: 100%;
+  width: 100%;
   justify-content: space-evenly; 
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .home__section1__text{
@@ -27,7 +37,6 @@
   padding: 1.5rem;
   flex-direction: column;
   align-items: start;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .home__frontpage{
@@ -64,13 +73,13 @@
 .home__h3{
   font-weight: 700;
   font-size: 2.2rem;
-  color: #9000E8;
+  color: #E3D500;
   margin-right: 5rem;
   margin-bottom: 1rem;
   background-color: black;
   border-radius: 1rem;
   padding: .5rem;
-  border: .2rem solid #9000E8;
+  border: .2rem solid #E3D500;
 }
 
 .home__p{
@@ -82,11 +91,11 @@
 
 .section1__btn{
   margin-right: 5rem;
-  color:  white;
+  color:  black;
   font-size: 1.3rem;
   padding: .5rem;
   border-radius: .5rem;
-  background-color: #9000E8;
+  background-color: #E3D500;
 }
 
 .home__section1__logo{
@@ -244,15 +253,15 @@
   margin-top: 5rem;
   font-size: 1.2rem;
   border-radius: .5rem;
-  background-color: blue;
+  background-color: #E3D500;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  color: white;  
+  color: black;  
 }
 
 .home__section4__btn:hover{
-  color: white;
-  border: 3px solid blue;
+  color: black;
+  background-color: white;
 }
 
 .home__section5{
