@@ -3,10 +3,14 @@ import {forwardRef} from 'react';
 import {IoLogoWhatsapp} from 'react-icons/io';
 import {RiInstagramFill} from 'react-icons/ri';
 import {MdEmail} from 'react-icons/md';
+import {motion} from 'framer-motion';
 
 const Contact = forwardRef(() => {
   return (
-    <div className='contact'>
+    <motion.div className='contact'
+    initial={{scale:0}}
+    animate={{scale:1}}
+    >
       <form className='form'>
         <h2 className='contact__h2'>Contact</h2>
         <input
@@ -47,7 +51,7 @@ const Contact = forwardRef(() => {
           </div>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 });
 

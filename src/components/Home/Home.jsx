@@ -18,9 +18,36 @@ import {FaPhone} from 'react-icons/fa6';
 
 function Home() {
   //Framer Motion Variants//
-  section1TextAnimation = {
-    start: {y: -20},
+  const section1TextAnimation = {
+    start: {x: 100,y: -100, opacity: 0},
+    end: {
+      x: 0,y: 0, opacity: 1, 
+      transition:{duration: 0.5}
+    }
   };
+  const section1LogoAnimation = {
+    start: {x: -100,y: 100, opacity: 0},
+    end: {
+      x: 0, y: 0, opacity: 1, 
+      transition:{delay: 0.2, duration:0.5}
+    }
+  }
+  const section2Animation = {
+    start: {scale: 0},
+    end: {scale: 1, transition:{duration: 0.4 ,staggerChildren: 0.2}}
+  }
+  const section3ImgAnimation={
+    start:{y:-100, opacity: 0},
+    end:{y:0, opacity: 1, transition:{delay:0.2, duration: 0.4}}
+  }
+  const section3TextAnimation={
+    start:{y:100, opacity: 0},
+    end:{y:0, opacity:1, transition:{delay:0.2, duration: 0.4}}
+  }
+  const section4Animation={
+    start:{y: 20, opacity:0},
+    end:{y:0 , opacity: 1}
+  }
   return (
     <div className='home'>
       <h1 className='home__h1'>Top Tier Termite Control</h1>
@@ -36,6 +63,8 @@ function Home() {
         <motion.div
           className='home__section1__text'
           variants={section1TextAnimation}
+          initial='start'
+          animate='end'
         >
           <h2 className='home__h2'>
             <b className='home__b'>Lorem</b> ipsumdolor apsumrial frederic epson
@@ -53,12 +82,23 @@ function Home() {
           </p>
           <NavLink className='section1__btn'> Learn More</NavLink>
         </motion.div>
-        <img className='home__section1__logo' src={logo} alt='' />
+        <motion.img className='home__section1__logo' 
+        variants={section1LogoAnimation}
+        initial='start'
+        animate='end'
+        src={logo} 
+        alt='' />
       </section>
       <section className='home__section'></section>
       <section className='home__section3'>
-        <div className='home__section3__box'>
-          <div className='home__section3__item--blue'>
+        <motion.div className='home__section3__box'
+          variants={section2Animation}
+          initial='start'
+          whileInView='end'
+          viewport={{once:true}}
+        >
+          <motion.div className='home__section3__item--blue'
+          variants={section2Animation}>
             <div className='home__icon__container--blue'>
               <FaHelmetSafety className='home__icon--blue' />
             </div>
@@ -69,8 +109,9 @@ function Home() {
                 ipsum dolor lorem ipsum dolor
               </span>
             </div>
-          </div>
-          <div className='home__section3__item--second'>
+          </motion.div>
+          <motion.div className='home__section3__item--second'
+          variants={section2Animation}>
             <div className='home__icon__container--second'>
               <BiBadgeCheck className='home__icon--second' />
             </div>
@@ -81,8 +122,9 @@ function Home() {
                 dolor lorem ipsum odlor
               </span>
             </div>
-          </div>
-          <div className='home__section3__item'>
+          </motion.div>
+          <motion.div className='home__section3__item'
+          variants={section2Animation}>
             <div className='home__icon__container'>
               <BiCalendarEvent className='home__icon' />
             </div>
@@ -93,8 +135,9 @@ function Home() {
                 dolor lorem ipsum odlor
               </span>
             </div>
-          </div>
-          <div className='home__section3__item'>
+          </motion.div>
+          <motion.div className='home__section3__item'
+          variants={section2Animation}>
             <div className='home__icon__container'>
               <BiBus className='home__icon' />
             </div>
@@ -105,8 +148,9 @@ function Home() {
                 dolor lorem ipsum odlor
               </span>
             </div>
-          </div>
-          <div className='home__section3__item--blue'>
+          </motion.div>
+          <motion.div className='home__section3__item--blue'
+          variants={section2Animation}>
             <div className='home__icon__container--blue'>
               <BiLock className='home__icon--blue' />
             </div>
@@ -117,8 +161,9 @@ function Home() {
                 dolor lorem ipsum odlor
               </span>
             </div>
-          </div>
-          <div className='home__section3__item--blue'>
+          </motion.div>
+          <motion.div className='home__section3__item--blue'
+          variants={section2Animation}>
             <div className='home__icon__container--blue'>
               <BiMessageAltDetail className='home__icon--blue' />
             </div>
@@ -129,8 +174,8 @@ function Home() {
                 dolor lorem ipsum odlor
               </span>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
       <section
         className='home__section4'
@@ -141,8 +186,12 @@ function Home() {
             `,
         }}
       >
-        <div
+        <motion.div
           className='home__section4__box'
+          variants={section3ImgAnimation}
+          initial='start'
+          whileInView='end'
+          viewport={{amount: 0.7, once:true}}
           style={{
             background: `url(${home4back})
             no-repeat
@@ -150,7 +199,12 @@ function Home() {
             `,
           }}
         />
-        <div className='home__section4__box'>
+        <motion.div className='home__section4__box'
+          variants={section3TextAnimation}
+          initial='start'
+          whileInView='end'
+          viewport={{amount: 0.7, once:true}}
+        >
           <h3 className='home__section4__h3'>
             Loremipsum doloralfet grafuscihop rotus
           </h3>
@@ -161,9 +215,14 @@ function Home() {
             Blanditiis, recusandae cum?
           </p>
           <NavLink className='home__section4__btn'> Read More </NavLink>
-        </div>
+        </motion.div>
       </section>
-      <section className='home__section5'>
+      <motion.section className='home__section5'
+      variants={section4Animation}
+      initial='start'
+      whileInView='end'
+      viewport={{once: true, amount: 0.5}}
+      >
         <div className='home__section5__box'>
           <img className='home__section5__img' src={termite} alt='' />
           <span className='home__section5__span'> Loremipsumdolor</span>
@@ -205,7 +264,7 @@ function Home() {
             minima dignissimos recusandae repudiandae
           </p>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

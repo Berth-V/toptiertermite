@@ -1,6 +1,7 @@
 import '../About/About.css';
 import about1 from '../../assets/about1.jpg';
 import about2 from '../../assets/about2.jpg';
+import {motion} from 'framer-motion';
 
 function About() {
   return (
@@ -9,7 +10,11 @@ function About() {
         <div className='about__img1__container'>
           <img className='about__img1' src={about1} alt='' />
         </div>
-        <h2 className='about__h2'>About Us</h2>
+        <motion.h2 className='about__h2'
+        initial={{x:100, opacity: 0}}
+        animate={{x:0, opacity:1}}
+        transition={{duration: 0.5}}
+        >About Us</motion.h2>
       </div>
       <div
         className='about__p__background'
