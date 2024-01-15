@@ -1,10 +1,11 @@
 import './Home.css';
-import logo from '../../assets/toptierlogo3.jpg';
+import logo from '../../assets/toptierlogo4.PNG';
 import frontpage from '../../assets/frontpage1.jpg';
 import home4back from '../../assets/home4back2.jpg';
 import pesticide from '../../assets/pesticide.png';
 import termite from '../../assets/termite.png';
 import section3back from '../../assets/section3back.jpg';
+import {motion} from 'framer-motion';
 import {NavLink} from 'react-router-dom';
 import {FaHelmetSafety} from 'react-icons/fa6';
 import {BiBadgeCheck} from 'react-icons/bi';
@@ -17,7 +18,9 @@ import {FaPhone} from 'react-icons/fa6';
 
 function Home() {
   //Framer Motion Variants//
-
+  section1TextAnimation = {
+    start: {y: -20},
+  };
   return (
     <div className='home'>
       <h1 className='home__h1'>Top Tier Termite Control</h1>
@@ -30,26 +33,27 @@ function Home() {
             `,
         }}
       >
-        <div className='home__background__opacity'>
-          <div className='home__section1__text'>
-            <h2 className='home__h2'>
-              <b className='home__b'>Lorem</b> ipsumdolor apsumrial frederic
-              epson frednich
-            </h2>
-            <h3 className='home__h3'>
-              <FaPhone className='section1__icon' />
-              +1 (619) 555 18 95
-            </h3>
-            <p className='home__p'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit provident
-              nam dolorum enim sit aut quod accusamus voluptate praesentium esse
-              quis nostrum dolorem! Odit voluptatum, maxime non itaque doloribus
-              quasi exercitationem.
-            </p>
-            <NavLink className='section1__btn'> Learn More</NavLink>
-          </div>
-          <img className='home__section1__logo' src={logo} alt='' />
-        </div>
+        <motion.div
+          className='home__section1__text'
+          variants={section1TextAnimation}
+        >
+          <h2 className='home__h2'>
+            <b className='home__b'>Lorem</b> ipsumdolor apsumrial frederic epson
+            frednich
+          </h2>
+          <h3 className='home__h3'>
+            <FaPhone className='section1__icon' />
+            +1 (619) 555 18 95
+          </h3>
+          <p className='home__p'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit provident
+            nam dolorum enim sit aut quod accusamus voluptate praesentium esse
+            quis nostrum dolorem! Odit voluptatum, maxime non itaque doloribus
+            quasi exercitationem.
+          </p>
+          <NavLink className='section1__btn'> Learn More</NavLink>
+        </motion.div>
+        <img className='home__section1__logo' src={logo} alt='' />
       </section>
       <section className='home__section'></section>
       <section className='home__section3'>

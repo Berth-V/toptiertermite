@@ -38,7 +38,7 @@
 
 .form__input:focus{
   outline: none;
-  border-bottom: .1rem solid #A4A4A4;
+  border-bottom: .1rem solid #0010CD;
 }
 
 .form__input--message{
@@ -57,7 +57,7 @@
 
 .form__input--message:focus{
   outline: none;
-  border-bottom: .1rem solid #A4A4A4;
+  border-bottom: .1rem solid #0010CD;
 }
 
 .form__submit{
@@ -68,12 +68,12 @@
   border-radius: .3rem;
   transition-timing-function: ease-out;
   transition-duration: .2s;
-  background: rgb(227,213,0);
-background: linear-gradient(132deg, rgba(227,213,0,1) 0%, rgba(255,218,47,1) 26%, rgba(227,106,0,1) 100%);
+  background-color: #0010CD;
 }
 
 .form__submit:hover{
-  background-color: #E3D500;
+  color: #0010CD;
+  background-color: white;
 }
 
 .contact__info{
@@ -100,7 +100,7 @@ background: linear-gradient(132deg, rgba(227,213,0,1) 0%, rgba(255,218,47,1) 26%
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  border: .2rem solid #E3D500;
+  border: .2rem solid #0010CD;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@ background: linear-gradient(132deg, rgba(227,213,0,1) 0%, rgba(255,218,47,1) 26%
 }
 
 .icon__item:hover{
-  background-color: #E3D500;
+  background-color: #0010CD;
 }
 
 .contact__icon{
