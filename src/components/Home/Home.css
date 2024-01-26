@@ -1,10 +1,10 @@
 .home {
   height: auto;
   width: 100vw;
+
 }
 
 .home__section1 {
-  margin-top: var(--margin-top-size);
   position: relative;
   height: 80dvh;
   top: 0;
@@ -15,22 +15,24 @@
   justify-content: center;
 }
 
-.home__section2{
+.home__section1{
   display: flex;
   height: 95dvh;
   align-items: center;
   justify-content: space-evenly; 
 }
 
-.home__section1__text{
+.home__services__text__box{
   display: flex;
-  padding: 1.5rem;
+  padding: 1rem;
   flex-direction: column;
   align-items: start;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 5rem;
   left: 5rem;
+  width: 42rem;
+  height: auto;
 }
 
 .home__frontpage{
@@ -51,12 +53,10 @@
 }
 
 .home__h2{
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: 800;
+  font-size: 3.5rem;
   color: white;
-  margin-right: 5rem;
   margin-bottom: 1rem;
-  width: 45rem;
 }
 
 .home__b{
@@ -68,7 +68,6 @@
   font-weight: 700;
   font-size: 2.2rem;
   color: white;
-  margin-right: 5rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
   padding: .5rem;
@@ -79,17 +78,16 @@
 .home__p{
   font-size: 1.4rem;
   color: white;
-  width: 48rem;
   margin-bottom: 1rem;
 }
 
 .section1__btn{
-  margin-right: 5rem;
   color:  white;
   font-size: 1.3rem;
   padding: .5rem;
   border-radius: .5rem;
   background-color: #273E8E;
+  margin-bottom: 1rem;
 }
 
 .home__section1__logo{
@@ -99,7 +97,7 @@
   right: 5rem;
 }
 
-.home__section3{
+.home__section2{
   width: 100vw;
   height: auto;
   display: flex;
@@ -107,41 +105,40 @@
   background-color: var(--primary-color);
 }
 
-.home__section3__box{
+.home__section2__box{
   width: 100rem;
-  height: 85dvh;
-  margin: 5rem 0;
+  height: auto;
+  margin: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.home__section3__item,
-.home__section3__item--blue,
-.home__section3__item--second,
-.home__section3__item--fiveth,
-.home__section3__item--sixth{
+.home__section2__item,
+.home__section2__item--blue,
+.home__section2__item--second,
+.home__section2__item--fiveth,
+.home__section2__item--sixth{
+  height: 30rem;
   min-width: 32rem;
-  height: 22rem;
   border-radius: 3rem;
   display: flex;
+  margin: .5rem;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-color: #E9E9E9;
-  box-shadow: .3rem .3rem black black;
 }
 
-.home__section3__item--blue{
+.home__section2__item--blue{
   background-color: #0030CF;
 }
 
-.home__section3__item--fiveth{
+.home__section2__item--fiveth{
   background-color: #242424;
 }
 
-.home__section3__item--sixth{
+.home__section2__item--sixth{
   background-color: var(--secondary-color);
 }
 
@@ -180,49 +177,72 @@
   font-size: 2.5rem;
 }
 
-.home__section3__text,
-.home__section3__text--blue,
-.home__section3__text--second,
-.home__section3__text--fiveth,
-.home__section3__text--sixth{
+.home__section2__text,
+.home__section2__text--blue,
+.home__section2__text--second,
+.home__section2__text--fiveth,
+.home__section2__text--sixth{
   height: auto;
   text-align: center;
-  width: 20rem;
-  margin-bottom: 2rem;
+  width: 25rem;
+  margin-top: 1.5rem;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.home__section3__text--blue{
+.home__section2__text--blue{
+  color: white;
+
+}
+
+.home__section2__text--fiveth{
   color: white;
 }
 
-.home__section3__text--fiveth{
+.home__section2__text--sixth{
   color: white;
 }
 
-.home__section3__text--sixth{
-  color: white;
-}
-
-.home__section3__h3,
-.home__section3__h3--blue,
-.home__section3__h3--fiveth,
-.home__section3__h3--sixth{
+.home__section2__h3,
+.home__section2__h3--blue,
+.home__section2__h3--fiveth,
+.home__section2__h3--sixth{
   font-size: 2rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
-.home__section3__span{
+.home__section2__p,
+.home__section2__p--blue{
   font-size: 1rem;
+  width: 23rem;
 }
 
-.home__section4{
+.section3__btn--blue{
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: black;
+  color: white;
+  border-radius: .7rem;
+}
+
+.section3__btn--gray{
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: .7rem;
+}
+
+.home__section3{
   display: flex;
   height: auto;
   justify-content: center;
 }
 
-.home__section4__box{
+.home__section3__box{
   width: 40rem;
   height: 50rem;
   margin: 5rem 2rem;
@@ -231,21 +251,21 @@
   color: var(--primary-color);
 }
 
-.home__section4__box:nth-child(2){
+.home__section3__box:nth-child(2){
   background-color: var(--secondary-color);
 }
 
-.home__section4__h3{
+.home__section3__h3{
   font-size: 3.5rem;
   margin-top: 3rem;
 }
 
-.home__section4__p{
+.home__section3__p{
   font-size: 1.5rem;
   margin: 2rem 0;
 }
 
-.home__section4__btn{
+.home__section3__btn{
   padding: .7rem;
   margin-top: 5rem;
   font-size: 1.2rem;
@@ -256,12 +276,12 @@
   color: white;  
 }
 
-.home__section4__btn:hover{
+.home__section3__btn:hover{
   color: white;
   border: 3px solid blue;
 }
 
-.home__section5{
+.home__section4{
   height: auto;
   width: 100vw;
   display: flex;
@@ -270,7 +290,7 @@
 }
 
 
-.home__section5__box{
+.home__section4__box{
   height: 25rem;
   width: 25rem;
   margin: 5rem 0;
@@ -281,7 +301,7 @@
   box-shadow: 6px 6px 20px #B6B6B6;
 }
 
-.home__section5__box--second{
+.home__section4__box--second{
   color: #9b9b9b;
   height: 25rem;
   width: 25rem;
@@ -294,7 +314,7 @@
   box-shadow: 6px 6px 20px #B6B6B6;
 }
 
-.home__section5__img{
+.home__section4__img{
   border-radius: .5rem;
   padding: .5rem;
   color: #0030CF;
@@ -302,27 +322,27 @@
   margin-top: 1rem;
 }
 
-.home__section5__h3--second{
+.home__section4__h3--second{
   color: white;
   font-size: 2.5rem;
   margin-top: 1.5rem;
 }
 
-.home__section5__span{
+.home__section4__span{
   color: black;
   margin-top: 2rem;
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.home__section5__span--second{
+.home__section4__span--second{
   color: white;
   margin-top: 1.5rem;
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.home__section5__p{
+.home__section4__p{
   color: #9b9b9b;
   font-size: 1.1rem;
   padding: 1rem;
@@ -330,12 +350,12 @@
   margin-top: 2rem;
 }
 
-.home__section5__icon{
+.home__section4__icon{
   color: #0030CF;
   margin-right: .5rem;
 }
 
-.home__section5__icon--second{
+.home__section4__icon--second{
   color:  green;
   margin-right: .5rem;
   font-size: 1.5rem;

@@ -7,12 +7,12 @@
   width: 100vw;
 }
 
-.services__section1{
+.services__background{
   height: 80vh;
   background-color: aqua;
 }
 
-.section1__container{
+.services__background__filter{
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -21,8 +21,8 @@
   align-items: center;
 }
 
-.section1__box{
-  width: 55rem;
+.services__container{
+  width: 85rem;
   height: 35rem;
   display: flex;
   flex-direction: column;
@@ -33,55 +33,50 @@
   display: inline;
   font-size: 2.6rem;
   text-align: center;
+  margin-bottom: .5rem;
 }
 
-.services1__container2{
+.services__container2{
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-.section1__text{
+.services__text__box{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 1rem;
+  padding: 0 1rem;
+  width: 60%;
+  height: 100%;
 }
 
-.section1__p{
+.services__p{
   color: white;
-  font-size: 1.4rem;
-  width: 25rem;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
 }
 
-.services1__btn{
-  width: 8rem;
-  font-size: 1.4rem;
+.services__btn{
+  width: 7rem;
+  padding: .4rem;
+  font-size: 1.2rem;
   color: white;
-  padding: .5rem;
+  text-align: center;
+  margin-top: .5rem;
   border-radius: .5rem;
   background-color: var(--secondary-color);
   transition-timing-function: ease-out;
   transition-duration: .3s;
 }
 
-.services1__btn:hover{
+.services__btn:hover{
   color: var(--secondary-color);
   background-color: aliceblue;
   border: .5rem solid  internline var(--secondary-color);
 }
 
-.services1__img{
+.services__img{
   height: 28rem;
   border-radius: 1rem;
   margin: auto;
-}
-
-.section1__text--2{
-  text-align: right;
-}
-.section1__text--4{
-  text-align: right;
 }
