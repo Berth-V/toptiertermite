@@ -105,49 +105,49 @@ function Home() {
           viewport={{once: true}}
         >
           <motion.div
-            className='home__section2__item--blue'
+            className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <div className='home__icon__container--blue'>
-              <FaHelmetSafety className='home__icon--blue' />
+            <div className='home__section2__logo__container'>
+              <FaHelmetSafety className='home__section2__logo' />
             </div>
-            <div className='home__section2__text--blue'>
-              <h3 className='home__section2__h3--blue'>Eco-Friendly</h3>
-              <p className='home__section2__p--blue'>
+            <div className='home__section2__text blue--card--text'>
+              <h3 className='home__section2__h3 blue--card--h3'>Eco-Friendly</h3>
+              <p className='home__section2__p blue--card--p'>
                 Our Eco-friendly termite treatments are designed to be safe for
                 your family, pets, and the environment, while still being highly
                 effective against termites.We offer a wide variety of green
                 alternatives for your specific needs.
               </p>
               <br />
-              <NavLink className='section3__btn--blue'> Learn More</NavLink>
+              <NavLink className='home__section2__btn blue--card--btn'> Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
-            className='home__section2__item--second'
+            className='home__section2__card'
             variants={section2Animation}
           >
-            <div className='home__icon__container--second'>
-              <BiBadgeCheck className='home__icon--second' />
+            <div className='home__section2__logo__container'>
+              <BiBadgeCheck className='home__section2__logo' />
             </div>
-            <div className='home__section2__text--second'>
+            <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Fumigation</h3>
-              <p className='home__section2__span'>
+              <p className='home__section2__p'>
                 Our Whole-Structure Fumigation is meant to eradicate Drywood
                 termites at every stage of their life cycles. Our fumigation
                 services are designed to provide you 100% peace of mind by
                 taking no chances against these unwelcomed visitors.
               </p>
               <br />
-              <NavLink className='section3__btn--gray'> Learn More</NavLink>
+              <NavLink className='home__section2__btn'> Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
-            className='home__section2__item'
+            className='home__section2__card'
             variants={section2Animation}
           >
-            <div className='home__icon__container'>
-              <BiCalendarEvent className='home__icon' />
+            <div className='home__section2__logo__container'>
+              <BiCalendarEvent className='home__section2__logo' />
             </div>
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Subterranean Termites</h3>
@@ -159,19 +159,19 @@ function Home() {
                 long-lasting.
               </p>
               <br />
-              <NavLink className='section3__btn--gray'> Learn More</NavLink>
+              <NavLink className='home__section2__btn'> Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
-            className='home__section2__item'
+            className='home__section2__card'
             variants={section2Animation}
           >
-            <div className='home__icon__container'>
-              <BiBus className='home__icon' />
+            <div className='home__section2__logo__container'>
+              <BiBus className='home__section2__logo' />
             </div>
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Escrow Services</h3>
-              <p className='home__section2__span'>
+              <p className='home__section2__p'>
                 At Top-Tier Termite Control we understand that termite
                 inspections can be a major concern for your home or business,
                 especially when it comes to escrow. That’s why we offer express
@@ -179,18 +179,18 @@ function Home() {
                 efficient, and reliable.
               </p>
               <br />
-              <NavLink className='section3__btn--gray'> Learn More</NavLink>
+              <NavLink className='home__section2__btn'>Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
-            className='home__section2__item--blue'
+            className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <div className='home__icon__container--blue'>
-              <BiLock className='home__icon--blue' />
+            <div className='home__section2__logo__container'>
+              <BiLock className='home__section2__logo' />
             </div>
-            <div className='home__section2__text--blue'>
-              <h3 className='home__section2__h3--blue'>Structural Repairs</h3>
+            <div className='home__section2__text blue--card--text'>
+              <h3 className='home__section2__h3 blue--card--h3'>Structural Repairs</h3>
               <p className='home__section2__span--blue'>
                 Are you worried about the structural integrity of your property?
                 Do you suspect that termites, fungus, or water damage have
@@ -198,18 +198,18 @@ function Home() {
                 of experts is here to help!
               </p>
               <br />
-              <NavLink className='section3__btn--blue'> Learn More</NavLink>
+              <NavLink className='home__section2__btn blue--card--btn'> Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
-            className='home__section2__item--blue'
+            className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <div className='home__icon__container--blue'>
-              <BiMessageAltDetail className='home__icon--blue' />
+            <div className='home__section2__logo__container'>
+              <BiMessageAltDetail className='home__section2__logo' />
             </div>
-            <div className='home__section2__text--blue'>
-              <h3 className='home__section2__h3--blue'>
+            <div className='home__section2__text blue--card--text'>
+              <h3 className='home__section2__h3 blue--card--h3'>
                 Preventative Treatment
               </h3>
               <p className='home__section2__span--blue'>
@@ -219,7 +219,7 @@ function Home() {
                 preventative measures.
               </p>
               <br />
-              <NavLink className='section3__btn--blue'> Learn More</NavLink>
+              <NavLink className='home__section2__btn blue--card--btn'> Learn More</NavLink>
             </div>
           </motion.div>
         </motion.div>
