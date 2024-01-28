@@ -5,16 +5,16 @@ import home4back from '../../assets/home4back2.jpg';
 import pesticide from '../../assets/pesticide.png';
 import termite from '../../assets/termite.png';
 import section3back from '../../assets/section3back.jpg';
-import {motion} from 'framer-motion';
-import {NavLink} from 'react-router-dom';
-import {FaHelmetSafety} from 'react-icons/fa6';
-import {BiBadgeCheck} from 'react-icons/bi';
-import {BiCalendarEvent} from 'react-icons/bi';
-import {BiBus} from 'react-icons/bi';
-import {BiLock} from 'react-icons/bi';
-import {BiMessageAltDetail} from 'react-icons/bi';
+import eco from '../../assets/ecofriendly.png';
+import fumigation from '../../assets/fumigation.png';
+import subterranean from '../../assets/subterranean.png';
+import escrow from '../../assets/escrow.png';
+import structural from '../../assets/structural.png';
+import preventative from '../../assets/preventative.png';
 import {FaCheck} from 'react-icons/fa';
 import {FaPhone} from 'react-icons/fa6';
+import {motion} from 'framer-motion';
+import {NavLink} from 'react-router-dom';
 
 function Home() {
   //Framer Motion Variants//
@@ -108,11 +108,12 @@ function Home() {
             className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <div className='home__section2__logo__container'>
-              <FaHelmetSafety className='home__section2__logo' />
-            </div>
+            <img className='home__section2__logo' src={eco} />
+
             <div className='home__section2__text blue--card--text'>
-              <h3 className='home__section2__h3 blue--card--h3'>Eco-Friendly</h3>
+              <h3 className='home__section2__h3 blue--card--h3'>
+                Eco-Friendly
+              </h3>
               <p className='home__section2__p blue--card--p'>
                 Our Eco-friendly termite treatments are designed to be safe for
                 your family, pets, and the environment, while still being highly
@@ -120,16 +121,16 @@ function Home() {
                 alternatives for your specific needs.
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn'> Learn More</NavLink>
+              <NavLink className='home__section2__btn blue--card--btn'>
+                Learn More
+              </NavLink>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card'
             variants={section2Animation}
           >
-            <div className='home__section2__logo__container'>
-              <BiBadgeCheck className='home__section2__logo' />
-            </div>
+            <img className='home__section2__logo' src={fumigation} />
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Fumigation</h3>
               <p className='home__section2__p'>
@@ -146,9 +147,7 @@ function Home() {
             className='home__section2__card'
             variants={section2Animation}
           >
-            <div className='home__section2__logo__container'>
-              <BiCalendarEvent className='home__section2__logo' />
-            </div>
+            <img className='home__section2__logo' src={subterranean} />
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Subterranean Termites</h3>
               <p className='home__section2__p'>
@@ -166,9 +165,7 @@ function Home() {
             className='home__section2__card'
             variants={section2Animation}
           >
-            <div className='home__section2__logo__container'>
-              <BiBus className='home__section2__logo' />
-            </div>
+            <img className='home__section2__logo' src={escrow} />
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Escrow Services</h3>
               <p className='home__section2__p'>
@@ -186,11 +183,11 @@ function Home() {
             className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <div className='home__section2__logo__container'>
-              <BiLock className='home__section2__logo' />
-            </div>
+            <img className='home__section2__logo' src={structural} />
             <div className='home__section2__text blue--card--text'>
-              <h3 className='home__section2__h3 blue--card--h3'>Structural Repairs</h3>
+              <h3 className='home__section2__h3 blue--card--h3'>
+                Structural Repairs
+              </h3>
               <p className='home__section2__span--blue'>
                 Are you worried about the structural integrity of your property?
                 Do you suspect that termites, fungus, or water damage have
@@ -198,16 +195,16 @@ function Home() {
                 of experts is here to help!
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn'> Learn More</NavLink>
+              <NavLink className='home__section2__btn blue--card--btn'>
+                Learn More
+              </NavLink>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <div className='home__section2__logo__container'>
-              <BiMessageAltDetail className='home__section2__logo' />
-            </div>
+            <img className='home__section2__logo' src={preventative} />
             <div className='home__section2__text blue--card--text'>
               <h3 className='home__section2__h3 blue--card--h3'>
                 Preventative Treatment
@@ -219,7 +216,9 @@ function Home() {
                 preventative measures.
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn'> Learn More</NavLink>
+              <NavLink className='home__section2__btn blue--card--btn'>
+                Learn More
+              </NavLink>
             </div>
           </motion.div>
         </motion.div>
