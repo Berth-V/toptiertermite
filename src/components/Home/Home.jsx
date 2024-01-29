@@ -117,11 +117,11 @@ function Home() {
               <p className='home__section2__p blue--card--p'>
                 Our Eco-friendly termite treatments are designed to be safe for
                 your family, pets, and the environment, while still being highly
-                effective against termites.We offer a wide variety of green
+                effective against termites. We offer a wide variety of green
                 alternatives for your specific needs.
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn'>
+              <NavLink className='home__section2__btn blue--card--btn' to='/contact'>
                 Learn More
               </NavLink>
             </div>
@@ -140,7 +140,7 @@ function Home() {
                 taking no chances against these unwelcomed visitors.
               </p>
               <br />
-              <NavLink className='home__section2__btn'> Learn More</NavLink>
+              <NavLink className='home__section2__btn' to='/contact'> Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
@@ -158,7 +158,7 @@ function Home() {
                 long-lasting.
               </p>
               <br />
-              <NavLink className='home__section2__btn'> Learn More</NavLink>
+              <NavLink className='home__section2__btn' to='/contact'> Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
@@ -171,12 +171,12 @@ function Home() {
               <p className='home__section2__p'>
                 At Top-Tier Termite Control we understand that termite
                 inspections can be a major concern for your home or business,
-                especially when it comes to escrow. That’s why we offer express
+                especially when it comes to escrow. That&apos;s why we offer express
                 termite escrow inspections that are designed to be fast,
                 efficient, and reliable.
               </p>
               <br />
-              <NavLink className='home__section2__btn'>Learn More</NavLink>
+              <NavLink className='home__section2__btn' to='/contact'>Learn More</NavLink>
             </div>
           </motion.div>
           <motion.div
@@ -195,7 +195,7 @@ function Home() {
                 of experts is here to help!
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn'>
+              <NavLink className='home__section2__btn blue--card--btn' to='/contact'>
                 Learn More
               </NavLink>
             </div>
@@ -212,11 +212,11 @@ function Home() {
               <p className='home__section2__span--blue'>
                 Without effective proactive control measures, infestations can
                 escalate rapidly, leading to significant repair costs and
-                potential safety hazards. That’s why it’s important to take
+                potential safety hazards. That&apos;s why it&apos;s important to take
                 preventative measures.
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn'>
+              <NavLink className='home__section2__btn blue--card--btn' to='/contact'>
                 Learn More
               </NavLink>
             </div>

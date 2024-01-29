@@ -57,22 +57,12 @@
 }
 
 .services__btn{
-  width: 7rem;
-  padding: .4rem;
-  font-size: 1.2rem;
-  color: white;
-  text-align: center;
-  margin-top: .5rem;
-  border-radius: .5rem;
-  background-color: var(--secondary-color);
-  transition-timing-function: ease-out;
-  transition-duration: .3s;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
 }
 
 .services__btn:hover{
   color: var(--secondary-color);
-  background-color: aliceblue;
-  border: .5rem solid  internline var(--secondary-color);
 }
 
 .services__img{

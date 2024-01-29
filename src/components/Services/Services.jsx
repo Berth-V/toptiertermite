@@ -89,13 +89,14 @@ function Services() {
                   of drywood termites. Any building with wood in the structure
                   is susceptible to infestation. How it works..? Gas fumigant
                   penetrates all air spaces inside the structure, including
-                  inside the infested wood. It’s why structural fumigation is
+                  inside the infested wood. It&apos;s why structural fumigation is
                   the only proven way to eliminate 100% every single colony of
-                  drywood termites. Contact us today to schedule your termite
+                  drywood termites. <br/>
+                  <NavLink className='services__btn'>Contact us</NavLink> today to schedule your termite
                   inspection and take the first step towards a termite-free
                   home!
                 </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
+                
               </div>
             </div>
           </div>
@@ -129,15 +130,15 @@ function Services() {
                   environment and your loved ones. Our subterranean termite
                   treatments are backed by our three year guarantee. We’re
                   committed to providing you with the best possible service and
-                  ensuring that your investment is termite-free. Don’t let
+                  ensuring that your investment is termite-free. Don&apos;t let
                   subterranean termites damage your home any longer. Contact us
                   today to schedule your subterranean termite
                   inspection/treatment and take the first step towards a
-                  termite-free home! Contact us today to learn more about our
+                  termite-free home!<br/>
+                  <NavLink className='services__btn'>Contact us</NavLink> today to learn more about our
                   subterranean termite treatment options and how we can help
                   protect your investment from these unwelcomed visitors.
                 </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
               </div>
               <img className='services__img' src={services7} />
             </div>
@@ -161,13 +162,13 @@ function Services() {
               <div className='services__text__box text__box--b'>
                 <p className='services__p'>
                   Our team of experts will work with you to schedule an
-                  inspection at a time that’s convenient for you. We offer a
+                  inspection at a time that&apos;s convenient for you. We offer a
                   range of inspection services, including wood-destroying
                   organism (WDO) inspections and termite certifications, that
                   can help ensure your property is free from infestation. Our
                   termite escrow inspections are backed by our satisfaction
                   guarantee. If you’re not completely satisfied with our
-                  service, we’ll work with you to make it right. We’re committed
+                  service, we&apos;ll work with you to make it right. We&apos;re committed
                   to providing you with the best possible service and ensuring
                   that your business is termite-free. We understand that FHA and
                   VA loans have specific requirements for escrow services. Our
@@ -183,12 +184,12 @@ function Services() {
                   service guarantee on the entire structure. The seller has
                   peace of mind, knowing there will be no foot traffic on the
                   roof and grass and plants will remain green and alive. Buyers
-                  (and neighbors) appreciate that! Contact us today to learn
+                  (and neighbors) appreciate that!<br/> 
+                  <NavLink className='services__btn'>Contact us</NavLink> today to learn
                   more about our termite escrow inspections and how we can help
                   protect your business from termites. Thank you for considering
                   our services!
                 </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
               </div>
             </div>
           </div>
@@ -214,25 +215,25 @@ function Services() {
                   fungus, and water damage. Our team of skilled professionals
                   has years of experience in identifying and repairing
                   structural issues, ensuring that your property is safe,
-                  secure, and structurally sound. Whether you’re dealing with
+                  secure, and structurally sound. Whether you&apos;re dealing with
                   sagging floors, cracked walls, or weakened supports, we have
                   the expertise and tools necessary to restore your property to
                   its former glory. We use only the highest quality materials
                   and cutting-edge techniques to ensure that your repairs are
                   long-lasting and effective. At Top-Tier Termite Control , we
                   understand that structural damage can be a stressful and
-                  overwhelming experience. That’s why we’re committed to
+                  overwhelming experience. That&apos;s why we&apos;re committed to
                   providing exceptional customer service and support throughout
                   the entire repair process. From the initial consultation to
-                  the final inspection, we’ll work closely with you to ensure
+                  the final inspection, we&apos;ll work closely with you to ensure
                   that your needs are met and your expectations are exceeded.
                   Don’t let structural damage compromise the safety and
-                  integrity of your property. Contact us today to learn more
+                  integrity of your property. <br/>
+                  <NavLink className='services__btn'>Contact us</NavLink> today to learn more
                   about our comprehensive structural repair services and how we
                   can help you restore your property to its former strength and
                   beauty.
                 </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
               </div>
               <img className='services__img' src={services7} />
             </div>
@@ -282,10 +283,10 @@ function Services() {
                   infestations. At Top-Tier Termite, we understand the
                   principles of termite control and are committed to protecting
                   your structures from the devastating impact of these
-                  wood-destroying pests. Contact us today to learn more about
+                  wood-destroying pests. <br/>
+                  <NavLink className='services__btn'>Contact us</NavLink> today to learn more about
                   our services and how we can help you protect your property.
                 </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
               </div>
             </div>
           </div>
