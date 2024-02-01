@@ -60,7 +60,7 @@ function Home() {
         style={{
           background: `url(${frontpage})
             no-repeat
-            top/var(--home4-back-size)
+            top/var(--home-frontpage-size)
             `,
         }}
       >
@@ -121,7 +121,10 @@ function Home() {
                 alternatives for your specific needs.
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn' to='/contact'>
+              <NavLink
+                className='home__section2__btn blue--card--btn'
+                to='/contact'
+              >
                 Learn More
               </NavLink>
             </div>
@@ -140,7 +143,10 @@ function Home() {
                 taking no chances against these unwelcomed visitors.
               </p>
               <br />
-              <NavLink className='home__section2__btn' to='/contact'> Learn More</NavLink>
+              <NavLink className='home__section2__btn' to='/contact'>
+                {' '}
+                Learn More
+              </NavLink>
             </div>
           </motion.div>
           <motion.div
@@ -158,7 +164,10 @@ function Home() {
                 long-lasting.
               </p>
               <br />
-              <NavLink className='home__section2__btn' to='/contact'> Learn More</NavLink>
+              <NavLink className='home__section2__btn' to='/contact'>
+                {' '}
+                Learn More
+              </NavLink>
             </div>
           </motion.div>
           <motion.div
@@ -171,12 +180,14 @@ function Home() {
               <p className='home__section2__p'>
                 At Top-Tier Termite Control we understand that termite
                 inspections can be a major concern for your home or business,
-                especially when it comes to escrow. That&apos;s why we offer express
-                termite escrow inspections that are designed to be fast,
+                especially when it comes to escrow. That&apos;s why we offer
+                express termite escrow inspections that are designed to be fast,
                 efficient, and reliable.
               </p>
               <br />
-              <NavLink className='home__section2__btn' to='/contact'>Learn More</NavLink>
+              <NavLink className='home__section2__btn' to='/contact'>
+                Learn More
+              </NavLink>
             </div>
           </motion.div>
           <motion.div
@@ -188,14 +199,17 @@ function Home() {
               <h3 className='home__section2__h3 blue--card--h3'>
                 Structural Repairs
               </h3>
-              <p className='home__section2__span--blue'>
+              <p className='home__section2__p blue--card--p'>
                 Are you worried about the structural integrity of your property?
                 Do you suspect that termites, fungus, or water damage have
                 compromised the safety of your home or business? If so, our team
                 of experts is here to help!
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn' to='/contact'>
+              <NavLink
+                className='home__section2__btn blue--card--btn'
+                to='/contact'
+              >
                 Learn More
               </NavLink>
             </div>
@@ -209,14 +223,17 @@ function Home() {
               <h3 className='home__section2__h3 blue--card--h3'>
                 Preventative Treatment
               </h3>
-              <p className='home__section2__span--blue'>
+              <p className='home__section2__p blue--card--p'>
                 Without effective proactive control measures, infestations can
                 escalate rapidly, leading to significant repair costs and
-                potential safety hazards. That&apos;s why it&apos;s important to take
-                preventative measures.
+                potential safety hazards. That&apos;s why it&apos;s important to
+                take preventative measures.
               </p>
               <br />
-              <NavLink className='home__section2__btn blue--card--btn' to='/contact'>
+              <NavLink
+                className='home__section2__btn blue--card--btn'
+                to='/contact'
+              >
                 Learn More
               </NavLink>
             </div>
@@ -228,7 +245,7 @@ function Home() {
         style={{
           background: `url(${section3back})
             no-repeat
-            center/var(--home4-back-size)
+            center/var(--home-frontpage-size)
             `,
         }}
       >
@@ -241,7 +258,7 @@ function Home() {
           style={{
             background: `url(${home4back})
             no-repeat
-            center/110%
+            center/var(--home-section4-img-size)
             `,
           }}
         />
@@ -271,7 +288,7 @@ function Home() {
         whileInView='end'
         viewport={{once: true, amount: 0.5}}
       >
-        <div className='home__section4__box'>
+        <div className='home__section4__card'>
           <img className='home__section4__img' src={termite} alt='' />
           <span className='home__section4__span'> Loremipsumdolor</span>
           <p className='home__section4__p'>
@@ -280,30 +297,32 @@ function Home() {
             minima dignissimos recusandae repudiandae
           </p>
         </div>
-        <div className='home__section4__box--second'>
-          <h3 className='home__section4__h3--second'>Lorem Ipsum</h3>
-          <span className='home__section4__span--second'>
-            <FaCheck className='home__section4__icon--second' />
+        <div className='home__section4__card   home__section4__card--blue--card'>
+          <h3 className='home__section4__h3 home__section4__h3--blue--card--h3'>
+            Lorem Ipsum
+          </h3>
+          <span className='home__section4__span home__section4__span--blue--card--span'>
+            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
             Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section4__span--second'>
-            <FaCheck className='home__section4__icon--second' />
+          <span className='home__section4__span home__section4__span--blue--card--span'>
+            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
             Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section4__span--second'>
-            <FaCheck className='home__section4__icon--second' />
+          <span className='home__section4__span home__section4__span--blue--card--span'>
+            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
             Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section4__span--second'>
-            <FaCheck className='home__section4__icon--second' />
+          <span className='home__section4__span home__section4__span--blue--card--span'>
+            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
             Lorem ipsum dolor ipsum
           </span>
-          <span className='home__section4__span--second'>
-            <FaCheck className='home__section4__icon--second' />
+          <span className='home__section4__span home__section4__span--blue--card--span'>
+            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
             Lorem ipsum dolor ipsum
           </span>
         </div>
-        <div className='home__section4__box'>
+        <div className='home__section4__card'>
           <img className='home__section4__img' src={pesticide} />
           <span className='home__section4__span'> Loremipsumdolor</span>
           <p className='home__section4__p'>

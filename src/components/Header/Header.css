@@ -11,26 +11,12 @@
 }
 
 .menu__btn {
-  height: 40px;
-  width: 45px;
-  position: fixed;
-  left: 10px;
-  top: 10px;
   display: none;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
-  font-size: 45px;
-  padding: 0;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
 }
 
 .logo{
   height: var(--margin-top-size);
-  margin-left: .5rem;
+  margin-left: .6rem;
 }
 
 .nav__ul {
@@ -40,6 +26,11 @@
   list-style: none;
   position: absolute;
   right: 3rem;
+}
+
+.nav__ul__mobile{
+  display: none;
+  position: absolute;
 }
 
 .nav__li {
@@ -71,59 +62,67 @@
   color: var(--third-color);
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 1114px) {
+
   .nav {
-    height: 100vh;
-    width: 50vw;
-    background-color: var(--primary-color);
-    position: absolute;
-    align-items: center;
-    border-right: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo{
+    margin: 0;
   }
 
   .menu__btn {
-    height: 40px;
-    width: 40px;
-    font-size: 40px;
-    padding: 2px;
-    left: 5px;
-    top: 5px;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    left: 0.2rem;
+    top: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 0;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    color: var(--secondary-color); 
   }
 
-  .nav__ul {
-    position: unset;
-    height: 350px;
-    flex-direction: column;
-  }
-
-  .nav__icon {
+  .nav__ul{
     display: none;
   }
 
-  .nav__span {
-    font-size: 25px;
+  .nav__ul__mobile{
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    left: -100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
   }
+
+  .nav__li {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .nav__span{
+    font-size: 1.3rem;
+  }
+
 }
 
-@media screen and (max-width: 330px) {
-  .nav {
-    height: 40px;
-  }
-
+@media screen and (max-width: 888px) {
   .menu__btn {
-    height: 35px;
-    width: 35px;
-    font-size: 35px;
-    padding: 0;
-    left: 5px;
-    top: 5px;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .menu__btn {
-    height: 33px;
-    width: 33px;
-    font-size: 33px;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.2rem;
+    top: 0.3rem;
   }
 }

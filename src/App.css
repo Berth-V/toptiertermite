@@ -5,7 +5,8 @@
   --secondary-color: #5400B9;
   --thrid-color: #363636;
   --margin-top-size: 3rem;
-  --home4-back-size: 105%;
+  --home-frontpage-size: 105%;
+  --home-section4-img-size: 105%;
   --footer-height: 50px;
   --footer-icons-size: 30px;
   --footer-icons-grow: 50px;
@@ -26,14 +27,22 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 1114px) {
   :root {
-    --margin-top-size: 50px;
+    --margin-top-size: 2.5rem;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1030px) {
   :root {
-    --margin-top-size: 40px;
+    --home-section4-img-size: 140%;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  :root {
+    --margin-top-size: 2rem;
+    --home-frontpage-size: 200%;
+    --home-section4-img-size: 150%;
   }
 }

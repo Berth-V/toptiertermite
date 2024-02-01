@@ -38,6 +38,7 @@
 
 .services__container2{
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
 }
@@ -65,8 +66,16 @@
   color: var(--secondary-color);
 }
 
+.services__img__container{
+  width: 25.5rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .services__img{
-  height: 28rem;
+  width: 12rem;
+  height: 14.5rem;
   border-radius: 1rem;
   margin: auto;
 }
