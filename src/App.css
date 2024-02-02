@@ -6,7 +6,8 @@
   --thrid-color: #363636;
   --margin-top-size: 3rem;
   --home-frontpage-size: 105%;
-  --home-section4-img-size: 105%;
+  --home-section3-background-size: 105%;
+  --home-section3-img-size: 105%;
   --footer-height: 50px;
   --footer-icons-size: 30px;
   --footer-icons-grow: 50px;
@@ -35,7 +36,7 @@ body {
 
 @media screen and (max-width: 1030px) {
   :root {
-    --home-section4-img-size: 140%;
+    --home-section3-img-size: 140%;
   }
 }
 
@@ -43,6 +44,20 @@ body {
   :root {
     --margin-top-size: 2rem;
     --home-frontpage-size: 200%;
-    --home-section4-img-size: 150%;
+    --home-section3-img-size: 150%;
+    --home-section3-background-size: 200%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  :root {
+    --home-section3-background-size: 320%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  :root {
+    --home-frontpage-size: 230%;
+  }
+}
+

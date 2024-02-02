@@ -245,7 +245,7 @@ function Home() {
         style={{
           background: `url(${section3back})
             no-repeat
-            center/var(--home-frontpage-size)
+            center/var(--home-section3-background-size)
             `,
         }}
       >
@@ -254,11 +254,11 @@ function Home() {
           variants={section3ImgAnimation}
           initial='start'
           whileInView='end'
-          viewport={{amount: 0.7, once: true}}
+          viewport={{once: true}}
           style={{
             background: `url(${home4back})
             no-repeat
-            center/var(--home-section4-img-size)
+            center/var(--home-section3-img-size)
             `,
           }}
         />
