@@ -38,7 +38,7 @@ function Home() {
   };
   const section2Animation = {
     start: {scale: 0},
-    end: {scale: 1, transition: {duration: 0.4, staggerChildren: 0.1}},
+    end: {scale: 1}
   };
   const section3ImgAnimation = {
     start: {y: -100, opacity: 0},
@@ -65,25 +65,25 @@ function Home() {
         }}
       >
         <motion.div
-          className='home__services__text__box'
+          className='home__section1__text__box'
           variants={section1TextAnimation}
           initial='start'
           animate='end'
         >
-          <h2 className='home__h2'>
+          <h2 className='home__section1__h2'>
             When termites move in,
             <br />
             Do I move out?
           </h2>
-          <p className='home__p'>
+          <p className='home__section1__p'>
             The answer is NO. With our top-tier advanced non-invasive treatment
             methods, those days are left in the past
           </p>
-          <NavLink className='section1__btn' to='/termitesinfo'>
+          <NavLink className='home__section1__btn' to='/termitesinfo'>
             Learn More
           </NavLink>
-          <h3 className='home__h3'>
-            <FaPhone className='section1__icon' />
+          <h3 className='home__section1__h3'>
+            <FaPhone className='home__section1__icon' />
             +1 (619) 555 18 95
           </h3>
         </motion.div>
@@ -99,10 +99,10 @@ function Home() {
       <section className='home__section2'>
         <motion.div
           className='home__section2__box'
-          variants={section2Animation}
           initial='start'
           whileInView='end'
-          viewport={{once: true}}
+          transition={{delayChildren: 0.4, duration: 0.3, staggerChildren: 0.2}}
+          viewport={{once: true, amount: 0.2}}
         >
           <motion.div
             className='home__section2__card blue--card'
@@ -254,7 +254,7 @@ function Home() {
           variants={section3ImgAnimation}
           initial='start'
           whileInView='end'
-          viewport={{once: true}}
+          viewport={{amount: 0.2,once: true}}
           style={{
             background: `url(${home4back})
             no-repeat

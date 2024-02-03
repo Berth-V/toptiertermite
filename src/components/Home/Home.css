@@ -1,7 +1,6 @@
 .home {
   height: auto;
   width: 100vw;
-
 }
 
 .home__section1{
@@ -10,18 +9,10 @@
   height: 95dvh;
   width: 100vw;
   align-items: center;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
 }
 
-.home__frontpage{
-  position: absolute;
-  z-index: 10;
-  margin-top: 5rem;
-  height: 30rem;
-  width: 45rem;
-}
-
-.home__services__text__box{
+.home__section1__text__box{
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -34,7 +25,7 @@
   height: auto;
 }
 
-.section1__icon{
+.home__section1__icon{
   font-size: 2rem;
   margin-right: .5rem;
 }
@@ -43,7 +34,7 @@
   display: none;
 }
 
-.home__h2{
+.home__section1__h2{
   font-weight: 800;
   font-size: 3.5rem;
   color: white;
@@ -55,7 +46,7 @@
   color: white;
 }
 
-.home__h3{
+.home__section1__h3{
   font-weight: 700;
   font-size: 2.2rem;
   color: white;
@@ -66,13 +57,13 @@
   border: .2rem solid #273E8E;
 }
 
-.home__p{
+.home__section1__p{
   color: white;
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.section1__btn{
+.home__section1__btn{
   padding: .5rem;
   color:  white;
   font-size: 1.3rem;
@@ -321,24 +312,24 @@
 
 @media screen and (max-width: 1440px) {
 
-  .home__services__text__box{
+  .home__section1__text__box{
     left: 2rem;
     bottom: 2rem;
   }
   
-  .home__h2{
+  .home__section1__h2{
     font-size: 3rem;
   }
   
-  .home__p{
+  .home__section1__p{
     font-size: 1.2rem;
   }
   
-  .section1__btn{
+  .home__section1__btn{
     font-size: 1rem;
   }
   
-  .home__h3{
+  .home__section1__h3{
     font-size: 1.9rem;
   }
   
@@ -434,27 +425,27 @@
 
 @media screen and (max-width: 1114px) {
 
-  .home__services__text__box{
+  .home__section1__text__box{
     width: 34rem;
   }
 
-  .home__h2{
+  .home__section1__h2{
     font-size: 2.5rem;
   }
 
-  .home__p{
+  .home__section1__p{
     font-size: 1rem;
   }
 
-  .section1__btn{
+  .home__section1__btn{
     font-size: 0.8rem;
   }
 
-  .section1__icon{
+  .home__section1__icon{
     font-size: 1.3rem;
   }
 
-  .home__h3{
+  .home__section1__h3{
     font-size: 1.5rem;
   }
 
@@ -532,29 +523,29 @@
 
 @media screen and (max-width: 888px) {
 
-  .home__services__text__box{
+  .home__section1__text__box{
     width: 28rem;
     left: 5rem;
     bottom: 7rem;
   }
 
-  .home__h2{
+  .home__section1__h2{
     font-size: 2rem;
   }
 
-  .home__p{
+  .home__section1__p{
     font-size: 1.1rem;
   }
 
-  .section1__btn{
+  .home__section1__btn{
     font-size: 0.9rem;
   }
 
-  .section1__icon{
+  .home__section1__icon{
     font-size: 1rem;
   }
 
-  .home__h3{
+  .home__section1__h3{
     font-size: 1.2rem;
   }
 
@@ -577,17 +568,17 @@
 
 @media screen and (max-width: 767px) {
 
-  .home__services__text__box{
+  .home__section1__text__box{
     width: 30rem;
     left: 3rem;
     bottom: 5rem;
   }
 
-  .home__h2{
+  .home__section1__h2{
     font-size: 2.4rem;
   }
 
-  .home__p{
+  .home__section1__p{
     font-size: 1.2rem;
   }
 
@@ -631,10 +622,11 @@
   .home__section3{
     flex-direction: column;
     align-items: center;
+    height: 80rem;
   }
 
   .home__section3__box{
-    min-width: 35rem;
+    width: 35rem;
     height: 50rem;
     margin: .5rem;
   }
@@ -660,7 +652,7 @@
 
   .home__section4__card{
     width: 90%;
-    height: 20rem;
+    height: 22rem;
   }
 
   .home__section4__img{
@@ -683,7 +675,7 @@
 
   .home__section4__p{
     margin-top: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
 }
@@ -692,18 +684,110 @@
 
   .home__section1{
     position: unset;
+    height: auto;
+    padding: 2rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-evenly; 
   }
 
-  .home__services__text__box{
+  .home__section1__text__box{
     position: unset;
+    width: 90vw;
+    height: auto;
+  }
+
+  .home__section1__h2{
+    font-size: 1.8rem;
+  }
+  
+  .home__section1__p{
+    font-size: 1rem;
+  }
+
+  .home__section1__btn{
+    font-size: 0.9rem;
+  }
+
+  .home__section1__icon{
+    font-size: 1rem;
   }
 
   .home__section1__logo{
     position: unset;
+    height: 14rem;
+  }
+
+  .home__section2__card{
+    height: 24rem;
+    width: 90%;
+  }
+
+  .home__section2__h3{
+    font-size: 1.5rem;
+  }
+
+  .home__section2__p{
+    font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .home__section3__box{
+    width: 95%;
+  }
+
+  .home__section4__h3--blue--card--h3{
+    margin-bottom: 0.9rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .home__section1__logo{
+    height: 11rem;
+  }
+
+  .home__section1__h2{
+    font-size: 1.6rem;
+  }
+  
+  .home__section1__p{
+    font-size: 0.9rem;
+  }
+
+  .home__section1__btn{
+    font-size: 0.8rem;
+  }
+
+  .home__section1__h3{
+    font-size: 1.1rem;
+  }
+
+  .home__section4__img{
+    width: 5.7rem;
+    height: 5.7rem;
+  }
+
+  .home__section4__span{
+    font-size: 1.3rem;
+  }
+
+  .home__section4__icon--blue--card--icon{
+    font-size: 1.3rem;
+  }
+
+  .home__section4__span--blue--card--span{
+    font-size: 1.1rem;
+  }
+
+  .home__section4__p{
+    font-size: 1rem;
+  }
+
+  .home__section4__h3--blue--card--h3{
+    font-size: 1.8rem;
   }
 
 }
