@@ -1,5 +1,5 @@
 .about {
-  height: 140dvh;
+  height: auto;
   width: 100vw;
   margin-top: var(--margin-top-size);
   display: flex;
@@ -41,7 +41,7 @@
 
 .about__p__background{
   width: 100vw;
-  height: 70dvh;
+  height: auto;
 }
 
 .about__p__container{
@@ -51,6 +51,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
 }
 
 .about__p{
