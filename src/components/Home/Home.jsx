@@ -38,7 +38,7 @@ function Home() {
   };
   const section2Animation = {
     start: {scale: 0},
-    end: {scale: 1}
+    end: {scale: 1},
   };
   const section3ImgAnimation = {
     start: {y: -100, opacity: 0},
@@ -144,7 +144,6 @@ function Home() {
               </p>
               <br />
               <NavLink className='home__section2__btn' to='/contact'>
-                {' '}
                 Learn More
               </NavLink>
             </div>
@@ -165,7 +164,6 @@ function Home() {
               </p>
               <br />
               <NavLink className='home__section2__btn' to='/contact'>
-                {' '}
                 Learn More
               </NavLink>
             </div>
@@ -254,7 +252,7 @@ function Home() {
           variants={section3ImgAnimation}
           initial='start'
           whileInView='end'
-          viewport={{amount: 0.2,once: true}}
+          viewport={{amount: 0.2, once: true}}
           style={{
             background: `url(${home4back})
             no-repeat
@@ -270,16 +268,16 @@ function Home() {
           viewport={{amount: 0.7, once: true}}
         >
           <h3 className='home__section3__h3'>
-          Why should I choose Top-Tier Termite Control?
+            Why should I choose Top-Tier Termite Control?
           </h3>
           <p className='home__section3__p'>
-            For over 25 years, Top-Tier Termite Control has been 
-            dedicated to serving the communities of Los Angeles, 
-            San Diego, Orange County, and other areas across Southern California. 
-            As an industry leader, we take pride in offering plant-based 
-            termite treatment alternatives that prioritize both 
-            effectiveness and environmental consciousness. 
-            Our experienced license Inspectors are committed to exceed your expectations.
+            For over 25 years, Top-Tier Termite Control has been dedicated to
+            serving the communities of Los Angeles, San Diego, Orange County,
+            and other areas across Southern California. As an industry leader,
+            we take pride in offering plant-based termite treatment alternatives
+            that prioritize both effectiveness and environmental consciousness.
+            Our experienced license Inspectors are committed to exceed your
+            expectations.
           </p>
           <NavLink className='home__section3__btn'> Read More </NavLink>
         </motion.div>
@@ -295,15 +293,13 @@ function Home() {
           <img className='home__section4__img' src={termite} alt='' />
           <span className='home__section4__span'>Top Warranty</span>
           <p className='home__section4__p'>
-          The <b>generous warranty</b> underscores their confidence in results. 
-          If termites return within 3 years, they’ll re-treat at no extra cost. 
-          Not only that the entire house is guaranteed!
-          <b>Peace of Mind:</b>  
-          With top-tier providers, you gain peace of mind. 
-          Your home remains termite-free, backed by a solid warranty. 
-          Choose wisely—protect your home with top-tier termite control 
-
-
+            The generous warranty underscores their confidence in results. If
+            termites return within 3 years, they&apos;ll re-treat at no extra
+            cost. Not only that the entire house is guaranteed!
+            <b>Peace of Mind:</b>
+            With top-tier providers, you gain peace of mind. Your home remains
+            termite-free, backed by a solid warranty. Choose wisely—protect your
+            home with top-tier termite control
           </p>
         </div>
         <div className='home__section4__card   home__section4__card--blue--card'>
@@ -328,14 +324,24 @@ function Home() {
           </span>
           <span className='home__section4__span home__section4__span--blue--card--span'>
             <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
-            Preventative treatment 
+            Preventative treatment
           </span>
         </div>
         <div className='home__section4__card'>
           <img className='home__section4__img' src={pesticide} />
           <span className='home__section4__span'>Top-Notch Performance</span>
           <p className='home__section4__p'>
-          Our skilled technicians employ a variety of borescopes tailored to different purposes. A borescope essentially consists of a camera attached to a flexible cord, granting our techs the ability to navigate diverse areas and peer into tight spaces. Even when there are no visible external signs of termites on a wall, our techs can pinpoint the optimal spot on the interior wall. By peering through a small hole, they uncover termite activity. We prioritize the technology our technicians use for termite detection. Their extensive training and expertise allow them to harness this technology effectively, ensuring top-notch service for TopTier Termite Control clients.”
+            Our skilled technicians employ a variety of borescopes tailored to
+            different purposes. A borescope essentially consists of a camera
+            attached to a flexible cord, granting our techs the ability to
+            navigate diverse areas and peer into tight spaces. Even when there
+            are no visible external signs of termites on a wall, our techs can
+            pinpoint the optimal spot on the interior wall. By peering through a
+            small hole, they uncover termite activity. We prioritize the
+            technology our technicians use for termite detection. Their
+            extensive training and expertise allow them to harness this
+            technology effectively, ensuring top-notch service for TopTier
+            Termite Control clients.”
           </p>
         </div>
       </motion.section>

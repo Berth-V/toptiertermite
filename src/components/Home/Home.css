@@ -219,9 +219,10 @@
   justify-content: space-evenly;
 }
 
+/* Suggested 1
 .home__section4__card{
-  height: 24rem;
-  width: 24rem;
+  height: 38rem;
+  width: 28rem;
   margin: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -240,22 +241,24 @@
   padding: .5rem;
   color: #0030CF;
   background-color: #E1E1E1;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   width: 5rem;
   height: 5rem;
+}
+
+
+.home__section4__span{
+  color: black;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .home__section4__h3--blue--card--h3{
   color: white;
   font-size: 2.5rem;
-  margin-top: 1.5rem;
-}
-
-.home__section4__span{
-  color: black;
-  margin-top: 2rem;
-  font-size: 1.4rem;
-  font-weight: 500;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .home__section4__span--blue--card--span{
@@ -267,10 +270,75 @@
 
 .home__section4__p{
   color: #9b9b9b;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 1.1rem;
   padding: 1rem;
-  text-align: center;
   margin-top: 0.5rem;
+}
+*/
+
+.home__section4__card{
+  height: 33rem;
+  width: 36rem;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 6px 6px 20px #B6B6B6;
+}
+
+.home__section4__img{
+  border-radius: .5rem;
+  padding: .5rem;
+  color: #0030CF;
+  background-color: #E1E1E1;
+  margin-top: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.home__section4__span{
+  color: black;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.home__section4__p{
+  color: #9b9b9b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.home__section4__card--blue--card{
+  color: #9b9b9b;
+  background-color: #374AD6;
+}
+
+.home__section4__h3--blue--card--h3{
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.home__section4__span--blue--card--span{
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .home__section4__icon{
@@ -520,7 +588,7 @@
 
 }
 
-@media screen and (max-width: 888px) {
+@media screen and (max-width: 890px) {
 
   .home__section1__text__box{
     width: 28rem;

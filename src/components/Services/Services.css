@@ -9,7 +9,6 @@
 
 .services__background{
   height: 80vh;
-  background-color: aqua;
 }
 
 .services__background__filter{
@@ -22,8 +21,8 @@
 }
 
 .services__container{
-  width: 85rem;
   height: 35rem;
+  width: 85rem;
   display: flex;
   flex-direction: column;
 }
@@ -38,14 +37,15 @@
 
 .services__container2{
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .services__text__box{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 1rem;
   width: 60%;
   height: 100%;
@@ -78,4 +78,117 @@
   height: 14.5rem;
   border-radius: 1rem;
   margin: auto;
+}
+
+@media screen and (max-width: 1345px) {
+  
+  .services__p{
+    font-size: 0.9rem;
+  }
+
+}
+
+@media screen and (max-width: 1114px) {
+  
+  .services__background{
+    height: 38rem;
+  }
+
+  .services__h2{
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  .services__container2{
+    align-items: center;
+  }
+
+  .services__img__container{
+    width: 22rem;
+    height: 85%;
+  }
+
+  .services__img{
+    width: 10rem;
+    height: 12.5rem;
+  }
+
+}
+
+@media screen and (max-width: 890px) {
+
+  .services__background{
+    height: 100%;
+  }
+
+  .services__container{
+    height: 100%;
+    width: 100vw;
+  }
+
+  .services__h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .services__container2{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .container--a{
+    flex-direction: column-reverse;
+  }
+
+  .services__img__container{
+    height: 36rem;
+    width: 34rem;
+    margin: 0.5rem 0;
+  }
+
+  .services__img{
+    height: 17rem;
+    width: 16rem;
+  }
+
+  .services__text__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 85%;
+    height: auto;
+    margin:  0.5rem 0;
+  }
+
+  .services__p{
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .services__h2{
+    font-size: 1.7rem;
+  }
+
+  .services__text__box{
+    width: 95%;
+  }
+  
+  .services__img__container{
+    height: auto;
+    width: 95vw;
+    justify-content: center;
+  }
+
+  .services__img{
+    height: 20rem;
+    width: 17rem;
+    margin: 0.5rem 0;
+  }
+
 }

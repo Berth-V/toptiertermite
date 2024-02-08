@@ -32,7 +32,7 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Eco-Friendly Treatment</h2>
-            <div className='services__container2'>
+            <div className='services__container2 container--a'>
               <div className='services__text__box text__box--a'>
                 <p className='services__p'>
                   Eco-Friendly Spot treatments are treatments that address
@@ -78,7 +78,7 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Fumigation</h2>
-            <div className='services__container2'>
+            <div className='services__container2 container--b'>
               <div className='services__img__container'>
                 <img className='services__img' src={fumigation1} />
                 <img className='services__img' src={fumigation2} />
@@ -130,7 +130,7 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Subterrain Termites</h2>
-            <div className='services__container2'>
+            <div className='services__container2 container--a'>
               <div className='services__text__box text__box--a'>
                 <p className='services__p'>
                   Our treatment process begins with a thorough inspection of
@@ -180,7 +180,7 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Escrow Services</h2>
-            <div className='services__container2'>
+            <div className='services__container2 container--b'>
               <div className='services__img__container'>
                 <img className='services__img' src={services8} />
                 <img className='services__img' src={services8} />
@@ -237,7 +237,7 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Structural Repairs</h2>
-            <div className='services__container2'>
+            <div className='services__container2 container--a'>
               <div className='services__text__box text__box--a'>
                 <p className='services__p'>
                   At Top-Tier Termite Control, we specialize in providing
@@ -288,7 +288,7 @@ function Services() {
           <div className='services__container'>
             <h2 className='services__h2'>Preventative Treatment</h2>
             <div className='services__container2'>
-              <div className='services__img__container'>
+              <div className='services__img__container container--b'>
                 <img className='services__img' src={services8} />
                 <img className='services__img' src={services8} />
                 <img className='services__img' src={services8} />
