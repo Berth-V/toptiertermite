@@ -62,4 +62,35 @@
 
 @media screen and (max-width: 1114px) {
 
+  .about {
+    margin: 0;
+  }
+
+  .about__section1 {
+    height: 35rem;
+    width: 100vw;
+  }
+
+  .about__h2{
+    font-size: 4rem;
+    margin-left: 8rem;
+    margin-bottom: 24rem;
+  }
+
+  .about__img1__container{
+    width: 30rem;
+    height: 30rem;
+    margin-right: 3rem;
+  }
+  
+  .about__img1{
+    height: 35rem;
+    margin-left: -11.5rem;
+  }
+
+  .about__p{
+    width: 80vw;
+    font-size: 1rem;
+  }
+
 }
