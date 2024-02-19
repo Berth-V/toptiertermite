@@ -3,6 +3,7 @@ import logo from '../../assets/toptierlogo4.PNG';
 import frontpage from '../../assets/frontpage1.jpg';
 import home4back from '../../assets/home4back2.jpg';
 import pesticide from '../../assets/pesticide.png';
+import solution from '../../assets/solution.png';
 import termite from '../../assets/termite.png';
 import section3back from '../../assets/section3back.jpg';
 import eco from '../../assets/ecofriendly.png';
@@ -15,6 +16,7 @@ import {FaCheck} from 'react-icons/fa';
 import {FaPhone} from 'react-icons/fa6';
 import {motion} from 'framer-motion';
 import {NavLink} from 'react-router-dom';
+import {NavHashLink} from 'react-router-hash-link';
 
 function Home() {
   //Framer Motion Variants//
@@ -84,7 +86,7 @@ function Home() {
           </NavLink>
           <h3 className='home__section1__h3'>
             <FaPhone className='home__section1__icon' />
-            +1 (619) 555 18 95
+            +1 888-360-9591
           </h3>
         </motion.div>
         <motion.img
@@ -121,12 +123,12 @@ function Home() {
                 alternatives for your specific needs.
               </p>
               <br />
-              <NavLink
+              <NavHashLink
                 className='home__section2__btn blue--card--btn'
-                to='/contact'
+                to='/services#eco'
               >
                 Learn More
-              </NavLink>
+              </NavHashLink>
             </div>
           </motion.div>
           <motion.div
@@ -143,9 +145,9 @@ function Home() {
                 taking no chances against these unwelcomed visitors.
               </p>
               <br />
-              <NavLink className='home__section2__btn' to='/contact'>
+              <NavHashLink className='home__section2__btn' to='/services#fum'>
                 Learn More
-              </NavLink>
+              </NavHashLink>
             </div>
           </motion.div>
           <motion.div
@@ -163,9 +165,9 @@ function Home() {
                 long-lasting.
               </p>
               <br />
-              <NavLink className='home__section2__btn' to='/contact'>
+              <NavHashLink className='home__section2__btn' to='/services#sub'>
                 Learn More
-              </NavLink>
+              </NavHashLink>
             </div>
           </motion.div>
           <motion.div
@@ -183,9 +185,9 @@ function Home() {
                 efficient, and reliable.
               </p>
               <br />
-              <NavLink className='home__section2__btn' to='/contact'>
+              <NavHashLink className='home__section2__btn' to='/services#esc'>
                 Learn More
-              </NavLink>
+              </NavHashLink>
             </div>
           </motion.div>
           <motion.div
@@ -204,12 +206,12 @@ function Home() {
                 of experts is here to help!
               </p>
               <br />
-              <NavLink
+              <NavHashLink
                 className='home__section2__btn blue--card--btn'
-                to='/contact'
+                to='/services#struc'
               >
                 Learn More
-              </NavLink>
+              </NavHashLink>
             </div>
           </motion.div>
           <motion.div
@@ -228,12 +230,12 @@ function Home() {
                 take preventative measures.
               </p>
               <br />
-              <NavLink
+              <NavHashLink
                 className='home__section2__btn blue--card--btn'
-                to='/contact'
+                to='/services#prev'
               >
                 Learn More
-              </NavLink>
+              </NavHashLink>
             </div>
           </motion.div>
         </motion.div>
@@ -279,7 +281,9 @@ function Home() {
             Our experienced license Inspectors are committed to exceed your
             expectations.
           </p>
-          <NavLink className='home__section3__btn'> Read More </NavLink>
+          <NavLink className='home__section3__btn' to='/whytoptier'>
+            Read More
+          </NavLink>
         </motion.div>
       </section>
       <motion.section
@@ -291,20 +295,32 @@ function Home() {
       >
         <div className='home__section4__card'>
           <img className='home__section4__img' src={termite} alt='' />
-          <span className='home__section4__span'>Top Warranty</span>
+          <span className='home__section4__span'>
+            Top <br />
+            Warranty
+          </span>
           <p className='home__section4__p'>
             The generous warranty underscores their confidence in results. If
             termites return within 3 years, they&apos;ll re-treat at no extra
             cost. Not only that the entire house is guaranteed!
+            <br />
+            <br />
             <b>Peace of Mind:</b>
-            With top-tier providers, you gain peace of mind. Your home remains
+            <br />
+            With Top-Tier providers, you gain peace of mind. Your home remains
             termite-free, backed by a solid warranty. Choose wisely—protect your
-            home with top-tier termite control
+            home with Top-Tier Termite Control
           </p>
         </div>
         <div className='home__section4__card   home__section4__card--blue--card'>
+          <img
+            className='home__section4__img home__section4__img--blue--card'
+            src={solution}
+            alt=''
+          />
           <h3 className='home__section4__h3 home__section4__h3--blue--card--h3'>
-            Advanced Solutions
+            Advanced <br />
+            Solutions
           </h3>
           <span className='home__section4__span home__section4__span--blue--card--span'>
             <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
@@ -329,19 +345,18 @@ function Home() {
         </div>
         <div className='home__section4__card'>
           <img className='home__section4__img' src={pesticide} />
-          <span className='home__section4__span'>Top-Notch Performance</span>
+          <span className='home__section4__span'>
+            Top-Notch <br />
+            Performance
+          </span>
           <p className='home__section4__p'>
-            Our skilled technicians employ a variety of borescopes tailored to
-            different purposes. A borescope essentially consists of a camera
-            attached to a flexible cord, granting our techs the ability to
-            navigate diverse areas and peer into tight spaces. Even when there
-            are no visible external signs of termites on a wall, our techs can
-            pinpoint the optimal spot on the interior wall. By peering through a
-            small hole, they uncover termite activity. We prioritize the
-            technology our technicians use for termite detection. Their
-            extensive training and expertise allow them to harness this
-            technology effectively, ensuring top-notch service for TopTier
-            Termite Control clients.”
+            Even when there are no visible external signs of termites on a wall,
+            our techs can pinpoint the optimal spot on the interior wall, by
+            peering through a small hole with an optical borescope they uncover
+            termite activity. We prioritize the technology our technicians use
+            for termite detection. Their extensive training and expertise allow
+            them to harness this technology effectively, ensuring top-notch
+            service for TopTier Termite Control clients.”
           </p>
         </div>
       </motion.section>

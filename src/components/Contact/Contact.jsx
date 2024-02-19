@@ -7,10 +7,7 @@ import {motion} from 'framer-motion';
 
 const Contact = forwardRef(() => {
   return (
-    <motion.div className='contact'
-    initial={{scale:0}}
-    animate={{scale:1}}
-    >
+    <motion.div className='contact' initial={{scale: 0}} animate={{scale: 1}}>
       <form className='form'>
         <h2 className='contact__h2'>Contact</h2>
         <input
@@ -37,7 +34,7 @@ const Contact = forwardRef(() => {
         />
         <input className='form__submit' type='submit' value='Send Message' />
         <div className='contact__info'>
-          <span className='contact__span'>Phone: +1 619 555 68 54</span>
+          <span className='contact__span'>Phone: +1 888-360-9591</span>
           <div className='contact__icon__box'>
             <div className='icon__item'>
               <IoLogoWhatsapp className='contact__icon' />

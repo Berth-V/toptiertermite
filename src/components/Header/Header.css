@@ -15,7 +15,7 @@
 }
 
 .logo{
-  height: var(--margin-top-size);
+  height: var(--margin-top-size); 
 }
 
 .nav__ul {

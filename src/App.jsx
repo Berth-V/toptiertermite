@@ -1,4 +1,3 @@
-import {useEffect} from 'react';
 import {HashRouter} from 'react-router-dom';
 import {Data} from './components/Context/Context';
 import './App.css';
@@ -7,10 +6,6 @@ import TransitionRoutes from './components/TransitionRoutes/TransitionRoutes';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  useEffect(() => {
-    scrollTo(0, 0);
-  }, [location]);
-
   return (
     <>
       <HashRouter>

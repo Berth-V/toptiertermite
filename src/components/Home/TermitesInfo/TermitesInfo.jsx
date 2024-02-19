@@ -1,4 +1,5 @@
-import '../TermitesInfo/TermitesInfo.css';
+import {NavLink} from 'react-router-dom';
+import './TermitesInfo.css';
 
 export default function TermitesInfo() {
   return (
@@ -16,7 +17,8 @@ export default function TermitesInfo() {
         Working with a professional termite control company, like Top-Tier, is
         the best and most effective way to control and eliminate termites on
         your property. <br />
-        Contact us today. <br />
+        <NavLink className='termitesInfo__btn'>Contact us today.</NavLink>{' '}
+        <br />
         Knowing what termites look like and understanding their colony, diet,
         and lifecycle can aid in the early detection of termites in your home,
         and early detection is key to avoiding an infestation. Termites are
@@ -24,9 +26,9 @@ export default function TermitesInfo() {
         cause major damage to your property and your wallet. For more than 25
         years, Top-Tier Termite Control has helped thousands of our neighbors
         protect their homes from the devastating damage caused by termites. And
-        we can do the same for you!Inspections are always free, so if you’re
-        ready to get started. <br />
-        Get yours now.
+        we can do the same for you!Inspections are always free, so if
+        you&apos;re ready to get started. <br />
+        <NavLink className='termitesInfo__btn'>Get yours now.</NavLink>
       </p>
     </div>
   );

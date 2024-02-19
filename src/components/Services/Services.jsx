@@ -1,12 +1,15 @@
 import '../Services/Services.css';
 import {NavLink} from 'react-router-dom';
-import services1 from '../../assets/services1.jpg';
+import {useEffect} from 'react';
+import fumback from '../../assets/fumigationback.jpg';
 import services2 from '../../assets/services2.jpg';
-import services3 from '../../assets/services3.jpg';
-import services4 from '../../assets/services4.jpg';
-import services5 from '../../assets/services5.jpg';
-import services6 from '../../assets/services6.jpg';
-import services8 from '../../assets/services8.jpg';
+import preventback from '../../assets/preventback.jpg';
+import escrowback from '../../assets/escrowback.jpeg';
+import structuralback from '../../assets/structuralback.jpeg';
+import structural1 from '../../assets/structural1.jpeg';
+import structural2 from '../../assets/structural2.jpeg';
+import structural3 from '../../assets/structural3.jpeg';
+import structural4 from '../../assets/structural4.jpeg';
 import subterrain1 from '../../assets/sub1.jpeg';
 import subterrain2 from '../../assets/sub2.jpeg';
 import subterrain3 from '../../assets/sub3.jpeg';
@@ -17,59 +20,16 @@ import fumigation3 from '../../assets/fum3.jpeg';
 import fumigation4 from '../../assets/fum4.jpeg';
 
 function Services() {
-  //Framer Motion Variants//
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
   return (
     <div className='services'>
       <section
         className='services__background'
+        id='fum'
         style={{
-          background: `url(${services1})
-          no-repeat
-          center/100%
-        `,
-        }}
-      >
-        <div className='services__background__filter'>
-          <div className='services__container'>
-            <h2 className='services__h2'>Eco-Friendly Treatment</h2>
-            <div className='services__container2 container--a'>
-              <div className='services__text__box text__box--a'>
-                <p className='services__p'>
-                  Eco-Friendly Spot treatments are treatments that address
-                  localized termite concerns inside your home. Spot treatments
-                  include wood/slab applications or drilling treatments that
-                  focus on addressing specific threats to the wood structures of
-                  your house. Our treatments are not only effective but also
-                  environmentally conscious, offering non-toxic options too for
-                  your peace of mind. While certain spot treatments are more
-                  invasive than others, it is less invasive than house
-                  fumigation. This option is typically used for more urgent
-                  termite infestations that affect the inside of your home. This
-                  option may involve drilling directly into wood to apply the
-                  product. Our green termite treatment options include heat
-                  treatment, liquid treatments, bait and monitoring stations,
-                  advanced foams and many more. Our team of experts at Top-Tier
-                  Termite will conduct a thorough inspection of your property to
-                  assess any termite activity and future risk. Based on our
-                  findings, we&apos;ll develop a detailed termite protection
-                  plan that&apos;s tailored to your specific needs.
-                </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
-              </div>
-              <div className='services__img__container'>
-                <img className='services__img' src={services5} />
-                <img className='services__img' src={services5} />
-                <img className='services__img' src={services5} />
-                <img className='services__img' src={services5} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        className='services__background'
-        style={{
-          background: `url(${services2})
+          background: `url(${fumback})
           no-repeat
           center/100%
         `,
@@ -78,14 +38,14 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Fumigation</h2>
-            <div className='services__container2 container--b'>
+            <div className='services__container2 container--a'>
               <div className='services__img__container'>
                 <img className='services__img' src={fumigation1} />
                 <img className='services__img' src={fumigation2} />
                 <img className='services__img' src={fumigation3} />
                 <img className='services__img' src={fumigation4} />
               </div>
-              <div className='services__text__box text__box--b'>
+              <div className='services__text__box text__box--a'>
                 <p className='services__p'>
                   Drywood termites cause an estimated $300 million in damage
                   each year in California alone. They also destroy properties in
@@ -120,8 +80,9 @@ function Services() {
       </section>
       <section
         className='services__background'
+        id='sub'
         style={{
-          background: `url(${services3})
+          background: `url(${services2})
           no-repeat
           center/100%
         `,
@@ -129,7 +90,7 @@ function Services() {
       >
         <div className='services__background__filter'>
           <div className='services__container'>
-            <h2 className='services__h2'>Subterrain Termites</h2>
+            <h2 className='services__h2'>Subterranean Termites</h2>
             <div className='services__container2 container--a'>
               <div className='services__text__box text__box--a'>
                 <p className='services__p'>
@@ -170,8 +131,101 @@ function Services() {
       </section>
       <section
         className='services__background'
+        id='struc'
         style={{
-          background: `url(${services4})
+          background: `url(${structuralback})
+          no-repeat
+          center/100%
+        `,
+        }}
+      >
+        <div className='services__background__filter'>
+          <div className='services__container'>
+            <h2 className='services__h2'>Structural Repairs</h2>
+            <div className='services__container2 container--a'>
+              <div className='services__img__container'>
+                <img className='services__img' src={structural1} />
+                <img className='services__img' src={structural2} />
+                <img className='services__img' src={structural3} />
+                <img className='services__img' src={structural4} />
+              </div>
+              <div className='services__text__box text__box--a'>
+                <p className='services__p'>
+                  At Top-Tier Termite Control, we specialize in providing
+                  comprehensive structural repair services that address termite,
+                  fungus, and water damage. Our team of skilled professionals
+                  has years of experience in identifying and repairing
+                  structural issues, ensuring that your property is safe,
+                  secure, and structurally sound. Whether you&apos;re dealing
+                  with sagging floors, cracked walls, or weakened supports, we
+                  have the expertise and tools necessary to restore your
+                  property to its former glory. We use only the highest quality
+                  materials and cutting-edge techniques to ensure that your
+                  repairs are long-lasting and effective. At Top-Tier Termite
+                  Control , we understand that structural damage can be a
+                  stressful and overwhelming experience. That&apos;s why
+                  we&apos;re committed to providing exceptional customer service
+                  and support throughout the entire repair process. From the
+                  initial consultation to the final inspection, we&apos;ll work
+                  closely with you to ensure that your needs are met and your
+                  expectations are exceeded. Don&apos;t let structural damage
+                  compromise the safety and integrity of your property. <br />
+                  <NavLink className='services__btn'>Contact us</NavLink> today
+                  to learn more about our comprehensive structural repair
+                  services and how we can help you restore your property to its
+                  former strength and beauty.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className='services__background'
+        id='eco'
+        style={{
+          background: `url(${fumback})
+          no-repeat
+          center/100%
+        `,
+        }}
+      >
+        <div className='services__background__filter'>
+          <div className='services__container'>
+            <h2 className='services__h2'>Eco-Friendly Treatment</h2>
+            <div className='services__container2 container--a'>
+              <div className='services__text__box text__box--a'>
+                <p className='services__p'>
+                  Eco-Friendly Spot treatments are treatments that address
+                  localized termite concerns inside your home. Spot treatments
+                  include wood/slab applications or drilling treatments that
+                  focus on addressing specific threats to the wood structures of
+                  your house. Our treatments are not only effective but also
+                  environmentally conscious, offering non-toxic options too for
+                  your peace of mind. While certain spot treatments are more
+                  invasive than others, it is less invasive than house
+                  fumigation. This option is typically used for more urgent
+                  termite infestations that affect the inside of your home. This
+                  option may involve drilling directly into wood to apply the
+                  product. Our green termite treatment options include heat
+                  treatment, liquid treatments, bait and monitoring stations,
+                  advanced foams and many more. Our team of experts at Top-Tier
+                  Termite will conduct a thorough inspection of your property to
+                  assess any termite activity and future risk. Based on our
+                  findings, we&apos;ll develop a detailed termite protection
+                  plan that&apos;s tailored to your specific needs.
+                </p>
+                <NavLink className='services__btn'>Contact Us</NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className='services__background'
+        id='esc'
+        style={{
+          background: `url(${escrowback})
           no-repeat
           center/100%
         `,
@@ -181,12 +235,6 @@ function Services() {
           <div className='services__container'>
             <h2 className='services__h2'>Escrow Services</h2>
             <div className='services__container2 container--b'>
-              <div className='services__img__container'>
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services8} />
-              </div>
               <div className='services__text__box text__box--b'>
                 <p className='services__p'>
                   Our team of experts will work with you to schedule an
@@ -227,58 +275,9 @@ function Services() {
       </section>
       <section
         className='services__background'
+        id='prev'
         style={{
-          background: `url(${services3})
-          no-repeat
-          center/100%
-        `,
-        }}
-      >
-        <div className='services__background__filter'>
-          <div className='services__container'>
-            <h2 className='services__h2'>Structural Repairs</h2>
-            <div className='services__container2 container--a'>
-              <div className='services__text__box text__box--a'>
-                <p className='services__p'>
-                  At Top-Tier Termite Control, we specialize in providing
-                  comprehensive structural repair services that address termite,
-                  fungus, and water damage. Our team of skilled professionals
-                  has years of experience in identifying and repairing
-                  structural issues, ensuring that your property is safe,
-                  secure, and structurally sound. Whether you&apos;re dealing
-                  with sagging floors, cracked walls, or weakened supports, we
-                  have the expertise and tools necessary to restore your
-                  property to its former glory. We use only the highest quality
-                  materials and cutting-edge techniques to ensure that your
-                  repairs are long-lasting and effective. At Top-Tier Termite
-                  Control , we understand that structural damage can be a
-                  stressful and overwhelming experience. That&apos;s why
-                  we&apos;re committed to providing exceptional customer service
-                  and support throughout the entire repair process. From the
-                  initial consultation to the final inspection, we&apos;ll work
-                  closely with you to ensure that your needs are met and your
-                  expectations are exceeded. Don&apos;t let structural damage
-                  compromise the safety and integrity of your property. <br />
-                  <NavLink className='services__btn'>Contact us</NavLink> today
-                  to learn more about our comprehensive structural repair
-                  services and how we can help you restore your property to its
-                  former strength and beauty.
-                </p>
-              </div>
-              <div className='services__img__container'>
-                <img className='services__img' src={services6} />
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services5} />
-                <img className='services__img' src={services5} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        className='services__background'
-        style={{
-          background: `url(${services4})
+          background: `url(${preventback})
           no-repeat
           center/100%
         `,
@@ -288,12 +287,6 @@ function Services() {
           <div className='services__container'>
             <h2 className='services__h2'>Preventative Treatment</h2>
             <div className='services__container2'>
-              <div className='services__img__container container--b'>
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services8} />
-                <img className='services__img' src={services8} />
-              </div>
               <div className='services__text__box text__box--b'>
                 <p className='services__p'>
                   At Top-Tier Termite, we offer a comprehensive prevention

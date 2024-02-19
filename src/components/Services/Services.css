@@ -59,7 +59,8 @@
 
 .services__btn{
   font-size: 1.1rem;
-  color: var(--secondary-color);
+  font-weight: 900;
+  color: #7400FF;
 }
 
 .services__btn:hover{

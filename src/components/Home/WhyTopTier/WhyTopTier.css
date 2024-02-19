@@ -1,0 +1,35 @@
+.whytoptier{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whytoptier__h2{
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    line-height: 5rem;
+    font-weight: 800;
+}
+
+.whytoptier__p{
+    font-size: 1.4rem;
+    color: black;
+    width: 80rem;
+    height: auto;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.whytoptier__btn{
+    color: var(--secondary-color);
+    font-weight: 700;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.whytoptier__btn:hover{
+    color: #9F4FFF;
+}

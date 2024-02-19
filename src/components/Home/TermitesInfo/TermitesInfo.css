@@ -1,6 +1,7 @@
 .termitesInfo{
-    height: calc(100dvh - var(--margin-top-size) - 1.5rem) ;
+    height: 100dvh;
     width: 100vw;
+    margin-top: - var(--margin-top-size);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,4 +20,15 @@
     color: black;
     width: 80rem;
     margin-top: 5rem;
+}
+
+.termitesInfo__btn{
+    color: var(--secondary-color);
+    font-weight: 700;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.termitesInfo__btn:hover{
+    color: #9F4FFF;
 }

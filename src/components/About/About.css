@@ -85,12 +85,66 @@
   
   .about__img1{
     height: 35rem;
-    margin-left: -11.5rem;
   }
 
   .about__p{
     width: 80vw;
     font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .about__section1 {
+    height: 22rem;
+  }
+
+  .about__h2{
+    font-size: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 15rem;
+  }
+
+  .about__img1__container{
+    width: 18rem;
+    height: 18rem;
+    margin-right: 3rem;
+  }
+  
+  .about__img1{
+    height: 23rem;
+    margin-left: -8rem;
+  }
+
+  .about__p{
+    width: 95vw;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .about__h2{
+    font-size: 2.5rem;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .about__img1__container{
+    width: 15rem;
+    height: 15rem;
+    margin-right: 3rem;
+  }
+  
+  .about__img1{
+    height: 20rem;
+    margin-left: -7rem;
+  }
+
+  .about__p{
+   margin: 0;
   }
 
 }
