@@ -7,9 +7,13 @@ function About() {
   return (
     <div className='about'>
       <div className='about__section1'>
-        <div className='about__img1__container'>
+        <motion.div className='about__img1__container'
+          initial='false'
+          animate={{rotateY: [0, 360, 0],}}
+          transition={{delay: 0.5}}
+        >
           <img className='about__img1' src={about1} alt='' />
-        </div>
+        </motion.div>
         <motion.h2
           className='about__h2'
           initial={{x: 100, opacity: 0}}

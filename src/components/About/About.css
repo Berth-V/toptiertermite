@@ -1,7 +1,6 @@
 .about {
   height: auto;
   width: 100vw;
-  margin-top: var(--margin-top-size);
   display: flex;
   flex-direction: column;
   align-items: center;
