@@ -1,7 +1,6 @@
 .termitesInfo{
-    height: 100dvh;
+    height: calc(100dvh - var(--margin-top-size) - var(--footer-height)); 
     width: 100vw;
-    margin-top: - var(--margin-top-size);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,4 +30,79 @@
 
 .termitesInfo__btn:hover{
     color: #9F4FFF;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .termitesInfo{
+        height: 100dvh; 
+    }
+
+    .termitesInfo__p{
+      width: 95vw;
+      height: auto;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .termitesInfo__h2{
+        width: 95vw;
+        font-size: 4.5rem;
+        margin-top: 3.5rem;
+    }
+
+    .termitesInfo__p{
+        margin-top: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+
+    .termitesInfo{
+        height: auto; 
+    }
+
+    .termitesInfo__h2{
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+
+    .termitesInfo__p{
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .termitesInfo__h2{
+        margin-top: 2rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 90vw;
+    }
+
+    .termitesInfo__p{
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+        text-align: justify;
+        width: 90vw;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .termitesInfo__h2{
+        font-size: 2.5rem;
+    }
+
+    .termitesInfo__p{
+        font-size: 1rem;
+    }
+
 }

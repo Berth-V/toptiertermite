@@ -12,11 +12,11 @@ import pesticide from '../../assets/pesticide.png';
 import solution from '../../assets/solution.png';
 import termite from '../../assets/termite.png';
 import section3back from '../../assets/section3back.jpg';
-import eco from '../../assets/ecofriendly.png';
-import fumigation from '../../assets/fumigation.avif';
+import eco from '../../assets/ecofriendlyupdated3.png';
+import fumigation from '../../assets/fumigationupdated.png';
 import subterranean from '../../assets/subterranean.png';
-import escrow from '../../assets/escrow.png';
-import structural from '../../assets/structural.png';
+import escrow from '../../assets/escrowupdated.png';
+import structural from '../../assets/structuralupdated.png';
 import preventative from '../../assets/preventative.png';
 
 function Home() {

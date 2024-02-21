@@ -28,8 +28,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 @media screen and (max-width: 1114px) {
   :root {
     --margin-top-size: 2.5rem;
