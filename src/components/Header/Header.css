@@ -1,10 +1,10 @@
 .nav {
+  height: var(--margin-top-size);
   position: sticky;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100vw;
-  height: var(--margin-top-size);
   background-color: white;
   display: flex;
   justify-content: flex-start;
@@ -15,6 +15,9 @@
 }
 
 .logo{
+  position: fixed;
+  left: 0;
+  top: 0;
   height: var(--margin-top-size); 
 }
 
@@ -69,6 +72,7 @@
   }
 
   .logo{
+    position: unset;
     margin: 0;
   }
 

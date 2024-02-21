@@ -69,9 +69,11 @@ function Services() {
                   inside the infested wood. It&apos;s why structural fumigation
                   is the only proven way to eliminate 100% every single colony
                   of drywood termites. <br />
-                  <NavLink className='services__btn'>Contact us</NavLink> today
-                  to schedule your termite inspection and take the first step
-                  towards a termite-free home!
+                  <NavLink className='services__btn' to='/contact'>
+                    Contact us
+                  </NavLink>{' '}
+                  today to schedule your termite inspection and take the first
+                  step towards a termite-free home!
                 </p>
               </div>
             </div>
@@ -113,9 +115,11 @@ function Services() {
                   inspection/treatment and take the first step towards a
                   termite-free home!
                   <br />
-                  <NavLink className='services__btn'>Contact us</NavLink> today
-                  to learn more about our subterranean termite treatment options
-                  and how we can help protect your investment from these
+                  <NavLink className='services__btn' to='/contact'>
+                    Contact us
+                  </NavLink>{' '}
+                  today to learn more about our subterranean termite treatment
+                  options and how we can help protect your investment from these
                   unwelcomed visitors.
                 </p>
               </div>
@@ -170,8 +174,10 @@ function Services() {
                   closely with you to ensure that your needs are met and your
                   expectations are exceeded. Don&apos;t let structural damage
                   compromise the safety and integrity of your property. <br />
-                  <NavLink className='services__btn'>Contact us</NavLink> today
-                  to learn more about our comprehensive structural repair
+                  <NavLink className='services__btn' to='/contact'>
+                    Contact us
+                  </NavLink>{' '}
+                  today to learn more about our comprehensive structural repair
                   services and how we can help you restore your property to its
                   former strength and beauty.
                 </p>
@@ -215,7 +221,9 @@ function Services() {
                   findings, we&apos;ll develop a detailed termite protection
                   plan that&apos;s tailored to your specific needs.
                 </p>
-                <NavLink className='services__btn'>Contact Us</NavLink>
+                <NavLink className='services__btn' to='/contact'>
+                  Contact Us
+                </NavLink>
               </div>
             </div>
           </div>
@@ -263,10 +271,12 @@ function Services() {
                   remain green and alive. Buyers (and neighbors) appreciate
                   that!
                   <br />
-                  <NavLink className='services__btn'>Contact us</NavLink> today
-                  to learn more about our termite escrow inspections and how we
-                  can help protect your business from termites. Thank you for
-                  considering our services!
+                  <NavLink className='services__btn' to='/contact'>
+                    Contact us
+                  </NavLink>{' '}
+                  today to learn more about our termite escrow inspections and
+                  how we can help protect your business from termites. Thank you
+                  for considering our services!
                 </p>
               </div>
             </div>
@@ -317,8 +327,10 @@ function Services() {
                   principles of termite control and are committed to protecting
                   your structures from the devastating impact of these
                   wood-destroying pests. <br />
-                  <NavLink className='services__btn'>Contact us</NavLink> today
-                  to learn more about our services and how we can help you
+                  <NavLink className='services__btn' to='/contact'>
+                    Contact us
+                  </NavLink>{' '}
+                  today to learn more about our services and how we can help you
                   protect your property.
                 </p>
               </div>

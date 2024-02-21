@@ -1,7 +1,11 @@
 import {NavLink} from 'react-router-dom';
+import {useEffect} from 'react';
 import './TermitesInfo.css';
 
 export default function TermitesInfo() {
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
   return (
     <div className='termitesInfo'>
       <h2 className='termitesInfo__h2'>
@@ -17,7 +21,9 @@ export default function TermitesInfo() {
         Working with a professional termite control company, like Top-Tier, is
         the best and most effective way to control and eliminate termites on
         your property. <br />
-        <NavLink className='termitesInfo__btn'>Contact us today.</NavLink>{' '}
+        <NavLink className='termitesInfo__btn' to='/contact'>
+          Contact us today.
+        </NavLink>
         <br />
         Knowing what termites look like and understanding their colony, diet,
         and lifecycle can aid in the early detection of termites in your home,
@@ -28,7 +34,9 @@ export default function TermitesInfo() {
         protect their homes from the devastating damage caused by termites. And
         we can do the same for you!Inspections are always free, so if
         you&apos;re ready to get started. <br />
-        <NavLink className='termitesInfo__btn'>Get yours now.</NavLink>
+        <NavLink className='termitesInfo__btn' to='/contact'>
+          Get yours now.
+        </NavLink>
       </p>
     </div>
   );

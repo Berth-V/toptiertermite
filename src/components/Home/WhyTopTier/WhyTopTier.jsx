@@ -1,7 +1,11 @@
+import {useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import './WhyTopTier.css';
 
 export default function WhyTopTier() {
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
   return (
     <div className='whytoptier'>
       <h2 className='whytoptier__h2'>

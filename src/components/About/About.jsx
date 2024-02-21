@@ -2,14 +2,19 @@ import '../About/About.css';
 import about1 from '../../assets/about1.jpg';
 import about2 from '../../assets/about2.jpg';
 import {motion} from 'framer-motion';
+import {useEffect} from 'react';
 
 function About() {
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
   return (
     <div className='about'>
       <div className='about__section1'>
-        <motion.div className='about__img1__container'
+        <motion.div
+          className='about__img1__container'
           initial='false'
-          animate={{rotateY: [0, 360, 0],}}
+          animate={{rotateY: [0, 360, 0]}}
           transition={{delay: 0.5}}
         >
           <img className='about__img1' src={about1} alt='' />

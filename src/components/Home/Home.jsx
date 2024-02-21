@@ -1,4 +1,10 @@
 import './Home.css';
+import {FaCheck} from 'react-icons/fa';
+import {FaPhone} from 'react-icons/fa6';
+import {motion} from 'framer-motion';
+import {NavLink} from 'react-router-dom';
+import {NavHashLink} from 'react-router-hash-link';
+import {useEffect} from 'react';
 import logo from '../../assets/toptierlogo4.PNG';
 import frontpage from '../../assets/frontpage1.jpg';
 import home4back from '../../assets/home4back2.jpg';
@@ -7,18 +13,16 @@ import solution from '../../assets/solution.png';
 import termite from '../../assets/termite.png';
 import section3back from '../../assets/section3back.jpg';
 import eco from '../../assets/ecofriendly.png';
-import fumigation from '../../assets/fumigation.png';
+import fumigation from '../../assets/fumigation.avif';
 import subterranean from '../../assets/subterranean.png';
 import escrow from '../../assets/escrow.png';
 import structural from '../../assets/structural.png';
 import preventative from '../../assets/preventative.png';
-import {FaCheck} from 'react-icons/fa';
-import {FaPhone} from 'react-icons/fa6';
-import {motion} from 'framer-motion';
-import {NavLink} from 'react-router-dom';
-import {NavHashLink} from 'react-router-hash-link';
 
 function Home() {
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
   //Framer Motion Variants//
   const section1TextAnimation = {
     start: {x: 100, y: -100, opacity: 0},
@@ -111,7 +115,6 @@ function Home() {
             variants={section2Animation}
           >
             <img className='home__section2__logo' src={eco} />
-
             <div className='home__section2__text blue--card--text'>
               <h3 className='home__section2__h3 blue--card--h3'>
                 Eco-Friendly
@@ -270,7 +273,8 @@ function Home() {
           viewport={{amount: 0.7, once: true}}
         >
           <h3 className='home__section3__h3'>
-            Why should I choose Top-Tier Termite Control?
+            Why should I choose <br />
+            Top-Tier Termite Control?
           </h3>
           <p className='home__section3__p'>
             For over 25 years, Top-Tier Termite Control has been dedicated to
@@ -291,7 +295,7 @@ function Home() {
         variants={section4Animation}
         initial='start'
         whileInView='end'
-        viewport={{once: true, amount: 0.5}}
+        viewport={{once: true, amount: 0.3}}
       >
         <div className='home__section4__card'>
           <img className='home__section4__img' src={termite} alt='' />
@@ -322,26 +326,28 @@ function Home() {
             Advanced <br />
             Solutions
           </h3>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
-            Non Tenting
-          </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
-            Eco-Friendly
-          </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
-            Structural Repairs
-          </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
-            Subterranean Termites
-          </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
-            Preventative treatment
-          </span>
+          <div className='home__section4__box--blue--card--box'>
+            <span className='home__section4__span home__section4__span--blue--card--span'>
+              <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+              Non Tenting
+            </span>
+            <span className='home__section4__span home__section4__span--blue--card--span'>
+              <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+              Eco-Friendly
+            </span>
+            <span className='home__section4__span home__section4__span--blue--card--span'>
+              <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+              Structural Repairs
+            </span>
+            <span className='home__section4__span home__section4__span--blue--card--span'>
+              <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+              Subterranean Termites
+            </span>
+            <span className='home__section4__span home__section4__span--blue--card--span'>
+              <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+              Preventative Treatment
+            </span>
+          </div>
         </div>
         <div className='home__section4__card'>
           <img className='home__section4__img' src={pesticide} />
