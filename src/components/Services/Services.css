@@ -81,7 +81,11 @@
   margin: auto;
 }
 
-@media screen and (max-width: 1345px) {
+@media screen and (max-width: 1500px) {
+
+  .services__background{
+    height: 93dvh;
+  }
   
   .services__p{
     font-size: 0.9rem;
@@ -173,11 +177,12 @@
 @media screen and (max-width: 550px) {
 
   .services__h2{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   .services__text__box{
     width: 95%;
+    text-align: justify;
   }
   
   .services__img__container{

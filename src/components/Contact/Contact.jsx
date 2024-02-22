@@ -33,6 +33,14 @@ const Contact = forwardRef(() => {
         />
         <input
           className='form__input'
+          name='number'
+          type='number'
+          placeholder='Phone Number'
+          required=''
+          autoComplete='off'>
+        </input>
+        <input
+          className='form__input'
           name='email'
           type='email'
           placeholder='E-Mail'
