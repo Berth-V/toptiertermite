@@ -1,11 +1,12 @@
 import '../Services/Services.css';
 import {NavLink} from 'react-router-dom';
 import {useEffect} from 'react';
+import ecoback from '../../assets/ecofriendlyback.jpg';
 import fumback from '../../assets/fumigationback.jpg';
-import services2 from '../../assets/services2.jpg';
 import preventback from '../../assets/preventback.jpg';
 import escrowback from '../../assets/escrowback.jpeg';
 import structuralback from '../../assets/structuralback.jpeg';
+import services2 from '../../assets/services2.jpg';
 import structural1 from '../../assets/structural1.jpeg';
 import structural2 from '../../assets/structural2.jpeg';
 import structural3 from '../../assets/structural3.jpeg';
@@ -93,8 +94,8 @@ function Services() {
         <div className='services__background__filter'>
           <div className='services__container'>
             <h2 className='services__h2'>Subterranean Termites</h2>
-            <div className='services__container2 container--a'>
-              <div className='services__text__box text__box--a'>
+            <div className='services__container2 container--b'>
+              <div className='services__text__box text__box--b'>
                 <p className='services__p'>
                   Our treatment process begins with a thorough inspection of
                   your property to identify the extent of the infestation. We
@@ -190,7 +191,7 @@ function Services() {
         className='services__background'
         id='eco'
         style={{
-          background: `url(${fumback})
+          background: `url(${ecoback})
           no-repeat
           center/100%
         `,
