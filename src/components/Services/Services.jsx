@@ -1,24 +1,24 @@
 import '../Services/Services.css';
 import {NavLink} from 'react-router-dom';
 import {useEffect} from 'react';
-import ecoback from '../../assets/ecofriendlyback.jpg';
-import fumback from '../../assets/fumigationback.jpg';
-import preventback from '../../assets/preventback.jpg';
-import escrowback from '../../assets/escrowback.jpeg';
-import structuralback from '../../assets/structuralback.jpeg';
-import services2 from '../../assets/services2.jpg';
-import structural1 from '../../assets/structural1.jpeg';
-import structural2 from '../../assets/structural2.jpeg';
-import structural3 from '../../assets/structural3.jpeg';
-import structural4 from '../../assets/structural4.jpeg';
-import subterrain1 from '../../assets/sub1.jpeg';
-import subterrain2 from '../../assets/sub2.jpeg';
-import subterrain3 from '../../assets/sub3.jpeg';
-import subterrain4 from '../../assets/sub4.jpeg';
-import fumigation1 from '../../assets/fum1.jpeg';
-import fumigation2 from '../../assets/fum2.jpeg';
-import fumigation3 from '../../assets/fum3.jpeg';
-import fumigation4 from '../../assets/fum4.jpeg';
+import ecoback from '../../assets/ecofriendlyback.avif';
+import fumback from '../../assets/fumigationback.avif';
+import preventback from '../../assets/preventback.avif';
+import escrowback from '../../assets/escrowback.avif';
+import structuralback from '../../assets/structuralback.avif';
+import services2 from '../../assets/services2.avif';
+import structural1 from '../../assets/structural1.avif';
+import structural2 from '../../assets/structural2.avif';
+import structural3 from '../../assets/structural3.avif';
+import structural4 from '../../assets/structural4.avif';
+import subterrain1 from '../../assets/sub1.avif';
+import subterrain2 from '../../assets/sub2.avif';
+import subterrain3 from '../../assets/sub3.avif';
+import subterrain4 from '../../assets/sub4.avif';
+import fumigation1 from '../../assets/fum1.avif';
+import fumigation2 from '../../assets/fum2.avif';
+import fumigation3 from '../../assets/fum3.avif';
+import fumigation4 from '../../assets/fum4.avif';
 
 function Services() {
   useEffect(() => {
@@ -41,10 +41,26 @@ function Services() {
             <h2 className='services__h2'>Fumigation</h2>
             <div className='services__container2 container--a'>
               <div className='services__img__container'>
-                <img className='services__img' src={fumigation1} />
-                <img className='services__img' src={fumigation2} />
-                <img className='services__img' src={fumigation3} />
-                <img className='services__img' src={fumigation4} />
+                <img
+                  className='services__img'
+                  src={fumigation1}
+                  alt='fumigation termite'
+                />
+                <img
+                  className='services__img'
+                  src={fumigation2}
+                  alt='fumigation termite'
+                />
+                <img
+                  className='services__img'
+                  src={fumigation3}
+                  alt='fumigation termite'
+                />
+                <img
+                  className='services__img'
+                  src={fumigation4}
+                  alt='fumigation termite'
+                />
               </div>
               <div className='services__text__box text__box--a'>
                 <p className='services__p'>
@@ -125,10 +141,26 @@ function Services() {
                 </p>
               </div>
               <div className='services__img__container'>
-                <img className='services__img' src={subterrain1} />
-                <img className='services__img' src={subterrain2} />
-                <img className='services__img' src={subterrain3} />
-                <img className='services__img' src={subterrain4} />
+                <img
+                  className='services__img'
+                  src={subterrain1}
+                  alt='subterranean termite control services'
+                />
+                <img
+                  className='services__img'
+                  src={subterrain2}
+                  alt='subterranean termite control services'
+                />
+                <img
+                  className='services__img'
+                  src={subterrain3}
+                  alt='subterranean termite control services'
+                />
+                <img
+                  className='services__img'
+                  src={subterrain4}
+                  alt='subterranean termite control services'
+                />
               </div>
             </div>
           </div>
@@ -149,10 +181,26 @@ function Services() {
             <h2 className='services__h2'>Structural Repairs</h2>
             <div className='services__container2 container--a'>
               <div className='services__img__container'>
-                <img className='services__img' src={structural1} />
-                <img className='services__img' src={structural2} />
-                <img className='services__img' src={structural3} />
-                <img className='services__img' src={structural4} />
+                <img
+                  className='services__img'
+                  src={structural1}
+                  alt='structural services repairs'
+                />
+                <img
+                  className='services__img'
+                  src={structural2}
+                  alt='structural services repairs'
+                />
+                <img
+                  className='services__img'
+                  src={structural3}
+                  alt='structural services repairs'
+                />
+                <img
+                  className='services__img'
+                  src={structural4}
+                  alt='structural services repairs'
+                />
               </div>
               <div className='services__text__box text__box--a'>
                 <p className='services__p'>

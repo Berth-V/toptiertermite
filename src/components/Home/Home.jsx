@@ -2,22 +2,21 @@ import './Home.css';
 import {FaCheck} from 'react-icons/fa';
 import {FaPhone} from 'react-icons/fa6';
 import {motion} from 'framer-motion';
-import {NavLink} from 'react-router-dom';
-import {NavHashLink} from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
 import {useEffect} from 'react';
-import logo from '../../assets/toptierlogo4.PNG';
-import frontpage from '../../assets/frontpage1.jpg';
-import home4back from '../../assets/home4back2.jpg';
+import logo from '../../assets/toptierlogo2.avif';
+import frontpage from '../../assets/frontpage.avif';
+import section3back from '../../assets/home3back.avif';
+import home3boxback from '../../assets/home3boxback.avif';
 import pesticide from '../../assets/pesticide.png';
 import solution from '../../assets/solution.png';
 import termite from '../../assets/termite.png';
-import section3back from '../../assets/section3back.jpg';
-import eco from '../../assets/ecofriendlyupdated3.png';
-import fumigation from '../../assets/fumigationupdated.png';
-import subterranean from '../../assets/subterranean.png';
-import escrow from '../../assets/escrowupdated.png';
-import structural from '../../assets/structuralupdated.png';
-import preventative from '../../assets/preventative.png';
+import eco from '../../assets/ecofriendly.avif';
+import fumigation from '../../assets/fumigation.avif';
+import subterranean from '../../assets/subterranean.avif';
+import escrow from '../../assets/escrow.avif';
+import structural from '../../assets/structural.avif';
+import preventative from '../../assets/preventative.avif';
 
 function Home() {
   useEffect(() => {
@@ -30,7 +29,7 @@ function Home() {
       x: 0,
       y: 0,
       opacity: 1,
-      transition: {duration: 0.5},
+      transition: {delay: 0.4, duration: 0.5},
     },
   };
   const section1LogoAnimation = {
@@ -39,7 +38,7 @@ function Home() {
       x: 0,
       y: 0,
       opacity: 1,
-      transition: {delay: 0.2, duration: 0.5},
+      transition: {delay: 0.5, duration: 0.5},
     },
   };
   const section2Animation = {
@@ -60,7 +59,6 @@ function Home() {
   };
   return (
     <div className='home'>
-      <h1 className='home__h1'>Top Tier Termite Control</h1>
       <section
         className='home__section1'
         style={{
@@ -74,7 +72,8 @@ function Home() {
           className='home__section1__text__box'
           variants={section1TextAnimation}
           initial='start'
-          animate='end'
+          whileInView='end'
+          viewport={{once: true}}
         >
           <h2 className='home__section1__h2'>
             When termites move in,
@@ -83,23 +82,26 @@ function Home() {
           </h2>
           <p className='home__section1__p'>
             The answer is NO. With our top-tier advanced non-invasive treatment
-            methods, those days are left in the past
+            methods, those days are left in the past.
           </p>
-          <NavLink className='home__section1__btn' to='/termitesinfo'>
+          <Link className='home__section1__btn' to='/termitesinfo'>
             Learn More
-          </NavLink>
+          </Link>
           <h3 className='home__section1__h3'>
-            <FaPhone className='home__section1__icon' />
-            +1 888-360-9591
+            <Link className='home__section1__btn2' to='tel:+18883609591'>
+              <FaPhone className='home__section1__icon' />
+              +1 888-360-9591
+            </Link>
           </h3>
         </motion.div>
         <motion.img
           className='home__section1__logo'
           variants={section1LogoAnimation}
           initial='start'
-          animate='end'
+          whileInView='end'
+          viewport={{once: true}}
           src={logo}
-          alt=''
+          alt='Top Tier Termite Control Logo'
         />
       </section>
       <section className='home__section2'>
@@ -114,7 +116,11 @@ function Home() {
             className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <img className='home__section2__logo' src={eco} />
+            <img
+              className='home__section2__logo'
+              src={eco}
+              alt='eco friendly logo'
+            />
             <div className='home__section2__text blue--card--text'>
               <h3 className='home__section2__h3 blue--card--h3'>
                 Eco-Friendly
@@ -126,19 +132,23 @@ function Home() {
                 alternatives for your specific needs.
               </p>
               <br />
-              <NavHashLink
+              <Link
                 className='home__section2__btn blue--card--btn'
                 to='/services#eco'
               >
                 Learn More
-              </NavHashLink>
+              </Link>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card'
             variants={section2Animation}
           >
-            <img className='home__section2__logo' src={fumigation} />
+            <img
+              className='home__section2__logo'
+              src={fumigation}
+              alt='fumigation logo'
+            />
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Fumigation</h3>
               <p className='home__section2__p'>
@@ -148,16 +158,20 @@ function Home() {
                 taking no chances against these unwelcomed visitors.
               </p>
               <br />
-              <NavHashLink className='home__section2__btn' to='/services#fum'>
+              <Link className='home__section2__btn' to='/services#fum'>
                 Learn More
-              </NavHashLink>
+              </Link>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card'
             variants={section2Animation}
           >
-            <img className='home__section2__logo' src={subterranean} />
+            <img
+              className='home__section2__logo'
+              src={subterranean}
+              alt='subterranean services logo'
+            />
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Subterranean Termites</h3>
               <p className='home__section2__p'>
@@ -168,16 +182,20 @@ function Home() {
                 long-lasting.
               </p>
               <br />
-              <NavHashLink className='home__section2__btn' to='/services#sub'>
+              <Link className='home__section2__btn' smooth to='/services#sub'>
                 Learn More
-              </NavHashLink>
+              </Link>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card'
             variants={section2Animation}
           >
-            <img className='home__section2__logo' src={escrow} />
+            <img
+              className='home__section2__logo'
+              src={escrow}
+              alt='escrow services logo'
+            />
             <div className='home__section2__text'>
               <h3 className='home__section2__h3'>Escrow Services</h3>
               <p className='home__section2__p'>
@@ -188,16 +206,20 @@ function Home() {
                 efficient, and reliable.
               </p>
               <br />
-              <NavHashLink className='home__section2__btn' to='/services#esc'>
+              <Link className='home__section2__btn' to='/services#esc'>
                 Learn More
-              </NavHashLink>
+              </Link>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <img className='home__section2__logo' src={structural} />
+            <img
+              className='home__section2__logo'
+              src={structural}
+              alt='structural repairs logo'
+            />
             <div className='home__section2__text blue--card--text'>
               <h3 className='home__section2__h3 blue--card--h3'>
                 Structural Repairs
@@ -209,19 +231,23 @@ function Home() {
                 of experts is here to help!
               </p>
               <br />
-              <NavHashLink
+              <Link
                 className='home__section2__btn blue--card--btn'
                 to='/services#struc'
               >
                 Learn More
-              </NavHashLink>
+              </Link>
             </div>
           </motion.div>
           <motion.div
             className='home__section2__card blue--card'
             variants={section2Animation}
           >
-            <img className='home__section2__logo' src={preventative} />
+            <img
+              className='home__section2__logo'
+              src={preventative}
+              alt='top tier termite control preventative treatment logo'
+            />
             <div className='home__section2__text blue--card--text'>
               <h3 className='home__section2__h3 blue--card--h3'>
                 Preventative Treatment
@@ -233,12 +259,12 @@ function Home() {
                 take preventative measures.
               </p>
               <br />
-              <NavHashLink
+              <Link
                 className='home__section2__btn blue--card--btn'
                 to='/services#prev'
               >
                 Learn More
-              </NavHashLink>
+              </Link>
             </div>
           </motion.div>
         </motion.div>
@@ -259,7 +285,7 @@ function Home() {
           whileInView='end'
           viewport={{amount: 0.2, once: true}}
           style={{
-            background: `url(${home4back})
+            background: `url(${home3boxback})
             no-repeat
             center/var(--home-section3-img-size)
             `,
@@ -285,9 +311,9 @@ function Home() {
             Our experienced license Inspectors are committed to exceed your
             expectations.
           </p>
-          <NavLink className='home__section3__btn' to='/whytoptier'>
+          <Link className='home__section3__btn' to='/whytoptier'>
             Read More
-          </NavLink>
+          </Link>
         </motion.div>
       </section>
       <motion.section

@@ -1,6 +1,6 @@
 import '../About/About.css';
-import about1 from '../../assets/about1.jpg';
-import about2 from '../../assets/about2.jpg';
+import about1 from '../../assets/about1.avif';
+import about2 from '../../assets/about2.avif';
 import {motion} from 'framer-motion';
 import {useEffect} from 'react';
 
@@ -17,7 +17,11 @@ function About() {
           animate={{rotateY: [0, 360, 0]}}
           transition={{delay: 0.5}}
         >
-          <img className='about__img1' src={about1} alt='' />
+          <img
+            className='about__img1'
+            src={about1}
+            alt='Termite Control About Us'
+          />
         </motion.div>
         <motion.h2
           className='about__h2'

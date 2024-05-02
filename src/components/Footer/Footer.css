@@ -6,8 +6,13 @@
   align-items: center;
 }
 
-
 .footer__span{
   font-size: 1.1rem;
   color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__span{
+    font-size: 0.8rem;
+  }
 }

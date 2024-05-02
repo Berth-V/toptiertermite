@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {FaBars} from 'react-icons/fa';
 import {useState} from 'react';
-import logo from '../../assets/toptierlogo2.jpg';
+import navLogo from '../../assets/toptierlogo1.avif';
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -21,14 +21,14 @@ function Header() {
 
   return (
     <nav className='nav'>
-      <img className='logo' src={logo} />
+      <h1 className='h1'>Top Tier Termite Control</h1>
+      <img className='logo' src={navLogo} alt='Top Tier Termite Control Logo' />
       <div className='menu__btn'>
         <FaBars
           className='toggle__btn'
           onClick={() => setIsNavOpen(!isNavOpen)}
         />
       </div>
-
       {/* ul for Desktop Mode */}
       <ul className='nav__ul'>
         <motion.li className='nav__li'>

@@ -21,6 +21,7 @@
   font-size: 2.5rem;
   text-align: center;
   margin-top: 2rem;
+  color: var(--primary-color);
 }
 
 .form__input{
@@ -29,6 +30,7 @@
   border: none;
   font-size: 1rem;
   background: unset;
+  color: var(--primary-color);
   border-bottom: .1rem solid #A4A4A4;
 }
 
@@ -117,6 +119,12 @@
 
 .contact__icon{
   font-size: 2.1rem;
+}
+
+.error {
+  height: auto;
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 640px) {

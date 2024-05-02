@@ -2,7 +2,8 @@ import {HashRouter} from 'react-router-dom';
 import {Data} from './components/Context/Context';
 import './App.css';
 import Header from './components/Header/Header';
-import TransitionRoutes from './components/TransitionRoutes/TransitionRoutes';
+import ScrollToAnchor from './components/ScrollToAnchor/ScrollToAnchor';
+import TransitionRoutes from './routes/TransitionRoutes';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <HashRouter>
         <Data>
           <Header />
+          <ScrollToAnchor />
           <TransitionRoutes />
           <Footer />
         </Data>

@@ -33,6 +33,7 @@
   font-size: 2.6rem;
   text-align: center;
   margin-bottom: .5rem;
+  color: var(--primary-color);
 }
 
 .services__container2{
@@ -183,6 +184,10 @@
   .services__text__box{
     width: 95%;
     text-align: justify;
+  }
+
+  .services__p{
+    font-size: 0.9rem;
   }
   
   .services__img__container{

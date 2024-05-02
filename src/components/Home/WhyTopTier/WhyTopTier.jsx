@@ -47,7 +47,7 @@ export default function WhyTopTier() {
         <b>Contact Us</b> <br />
         <br />
         Ready to safeguard your investment?<span> </span>
-        <NavLink className='whytoptier__btn'>
+        <NavLink className='whytoptier__btn' to='/contact'>
           Contact Top-Tier Termite Control
         </NavLink>
         <span> </span>

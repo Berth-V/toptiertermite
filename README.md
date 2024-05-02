@@ -1,11 +1,11 @@
-# Berth-V Portfolio
+# Top Tier Termite Control
 
+This is a Termite-Control WebSite
 This project was created with [Vite](https://github.com/vitejs/vite).
-This is my Portfolio
 
 ### :globe_with_meridians: Direct WebSite
 
-https://berth-v.github.io/portfolio/
+https://toptiertermite.com
 
 ### :space_invader: SetUp
 
