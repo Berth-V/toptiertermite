@@ -88,7 +88,7 @@ function Services() {
                   of drywood termites. <br />
                   <NavLink className='services__btn' to='/contact'>
                     Contact us
-                  </NavLink>{' '}
+                  </NavLink>
                   today to schedule your termite inspection and take the first
                   step towards a termite-free home!
                 </p>

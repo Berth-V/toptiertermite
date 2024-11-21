@@ -7,6 +7,7 @@ import navLogo from '../../assets/toptierlogo1.avif';
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  //Framer Motion Variants//
   const openNavAnimation = {
     open: {
       left: '0',
@@ -52,11 +53,10 @@ function Header() {
           </NavLink>
         </motion.li>
       </ul>
-
       {/* ul for Mobile Mode */}
       <motion.ul
         className='nav__ul__mobile'
-        /*Framer Motions Attributtes*/
+        /*Framer Motions Attributes*/
         variants={openNavAnimation}
         animate={isNavOpen ? 'open' : 'close'}
       >
