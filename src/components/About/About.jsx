@@ -13,6 +13,7 @@ function About() {
       <div className='about__section1'>
         <motion.div
           className='about__img1__container'
+          /* Framer Motion Attributes */
           initial='false'
           animate={{rotateY: [0, 360, 0]}}
           transition={{delay: 0.5}}
@@ -25,6 +26,7 @@ function About() {
         </motion.div>
         <motion.h2
           className='about__h2'
+          /* Framer Motion Attributes */
           initial={{x: 100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           transition={{duration: 0.5}}
@@ -36,9 +38,9 @@ function About() {
         className='about__p__background'
         style={{
           background: `url(${about2})
-                  no-repeat
-                  center/100%
-                  `,
+                       no-repeat
+                       center/100%
+                      `,
         }}
       >
         <div className='about__p__container'>
@@ -57,9 +59,10 @@ function About() {
             crannies.
             <br />
             <b>Expertise and Precision:</b> Our technicians are not just
-            skilled; they’re termite detectives. They know where to look, how to
-            interpret subtle signs, and when to investigate further. Their keen
-            eye ensures accurate identification and targeted treatment.
+            skilled; they&apos;re termite detectives. They know where to look,
+            how to interpret subtle signs, and when to investigate further.
+            Their keen eye ensures accurate identification and targeted
+            treatment.
             <br />
             <b>Client-Centric Service:</b> We prioritize your peace of mind. Our
             friendly team will guide you through the process, answer your
@@ -82,7 +85,8 @@ function About() {
             from termites.
             <br />
             Contact Us Ready to protect your property? Reach out to TopTier
-            Termite Control today. We’re here to keep your home termite-free!
+            Termite Control today. We&apos;re here to keep your home
+            termite-free!
           </p>
         </div>
       </div>

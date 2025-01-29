@@ -16,7 +16,7 @@
 
 .termitesInfo__p{
     font-size: 1.5rem;
-    color: black;
+    color: var(--black-color);
     width: 80rem;
     margin-top: 5rem;
 }

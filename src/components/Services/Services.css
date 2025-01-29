@@ -4,7 +4,7 @@
 
 .services{
   height: auto;
-  width: 100vw;
+  width: 100vw; 
 }
 
 .services__background{
@@ -43,6 +43,16 @@
   justify-content: space-evenly;
 }
 
+.container--a{
+  display: flex;
+  flex-direction: row;
+}
+
+.container--b{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .services__text__box{
   display: flex;
   flex-direction: column;
@@ -53,7 +63,7 @@
 }
 
 .services__p{
-  color: white;
+  color: var(--primary-color);
   font-size: 1.1rem;
   width: 100%;
 }
@@ -61,7 +71,7 @@
 .services__btn{
   font-size: 1.1rem;
   font-weight: 900;
-  color: #7400FF;
+  color: var(--fourth-color);
 }
 
 .services__btn:hover{

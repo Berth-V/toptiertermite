@@ -90,7 +90,7 @@ function HomeSection2() {
               long-lasting.
             </p>
             <br />
-            <Link className='home__section2__btn' smooth to='/services#sub'>
+            <Link className='home__section2__btn' to='/services#sub'>
               Learn More
             </Link>
           </div>

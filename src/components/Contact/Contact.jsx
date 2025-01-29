@@ -1,5 +1,5 @@
 import '../Contact/Contact.css';
-import {forwardRef, useEffect} from 'react';
+import {useEffect} from 'react';
 import {IoLogoWhatsapp} from 'react-icons/io';
 import {RiInstagramFill} from 'react-icons/ri';
 import {MdEmail} from 'react-icons/md';
@@ -7,55 +7,17 @@ import {motion} from 'framer-motion';
 import {NavLink} from 'react-router-dom';
 import useForm from '../../customHooks/useForm';
 
-const Contact = forwardRef(() => {
+function Contact() {
   useEffect(() => {
     scrollTo(0, 0);
   }, [location]);
   // Form Variants //
-  const initialData = {
-    name: '',
-    number: '',
-    email: '',
-    message: '',
-  };
-  const onValidate = (form) => {
-    const error = [];
-    const regexName = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
-    const regexNumber = /^\d{7,14}$/;
-    const regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    const regexMessage = /^.{1,150}$/;
+  const {form, error, handleChange, handleSubmit} = useForm();
 
-    if (!regexName.test(form.name)) {
-      error[0] = true;
-      error[1] = 'Name must content 3-40 characters';
-      return error;
-    }
-    if (!regexNumber.test(form.number)) {
-      error[0] = true;
-      error[1] = 'Number must content 7 to 14 digit';
-      return error;
-    }
-    if (!regexEmail.test(form.email)) {
-      error[0] = true;
-      error[1] = 'Invalid E-mail';
-      return error;
-    }
-    if (!regexMessage.test(form.message)) {
-      error[0] = true;
-      error[1] = 'Message must content 1-150 characters';
-      return error;
-    }
-    error[0] = false;
-    return error;
-  };
-  const {form, error, handleChange, handleSubmit} = useForm(
-    initialData,
-    onValidate,
-  );
   return (
     <motion.div
       className='contact'
-      // Framer Motion Attributtes
+      // Framer Motion Attributes //
       initial={{scale: 0}}
       animate={{scale: 1}}
     >
@@ -114,6 +76,7 @@ const Contact = forwardRef(() => {
             {error[1]}
           </div>
         ) : null}
+        {/* Contact Section */}
         <div className='contact__info'>
           <span className='contact__span'>Phone: +1 888-360-9591</span>
           <div className='contact__icon__box'>
@@ -143,6 +106,6 @@ const Contact = forwardRef(() => {
       </form>
     </motion.div>
   );
-});
+}
 
 export default Contact;

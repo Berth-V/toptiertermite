@@ -31,16 +31,16 @@
   font-size: 1rem;
   background: unset;
   color: var(--primary-color);
-  border-bottom: .1rem solid #A4A4A4;
+  border-bottom: .1rem solid var(--gray-form-color);
 }
 
 .form__input::placeholder{
-  color: #A4A4A4;
+  color: var(--gray-form-color);
 }
 
 .form__input:focus{
   outline: none;
-  border-bottom: .1rem solid #0010CD;
+  border-bottom: .1rem solid var(--blue-form-color);
 }
 
 .form__input--message{
@@ -51,15 +51,15 @@
   resize: none;
   font-size: 1rem;
   background: unset;
-  border-bottom: .1rem solid #A4A4A4;
+  border-bottom: .1rem solid var(--gray-form-color);
 }
 .form__input--message::placeholder{
-  color: #A4A4A4;
+  color: var(--gray-form-color);
 }
 
 .form__input--message:focus{
   outline: none;
-  border-bottom: .1rem solid #0010CD;
+  border-bottom: .1rem solid var(--blue-form-color);
 }
 
 .form__submit{
@@ -70,12 +70,13 @@
   border-radius: .3rem;
   transition-timing-function: ease-out;
   transition-duration: .2s;
-  background-color: #0010CD;
+  background-color: var(--blue-form-color);
 }
 
 .form__submit:hover{
-  color: #0010CD;
-  background-color: white;
+  color: var(--blue-form-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 .contact__info{
@@ -90,7 +91,7 @@
 
 .contact__span{
   font-size: 1.4rem;
-  color: white;
+  color: var(--primary-color);
 }
 
 .contact__icon__box{
@@ -103,9 +104,9 @@
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  border: .2rem solid #0010CD;
+  border: .2rem solid var(--blue-form-color);
   display: flex;
-  color: white;
+  color: var(--primary-color);
   align-items: center;
   justify-content: center;
   transition-timing-function: ease-in;
@@ -113,8 +114,8 @@
 }
 
 .icon__item:hover{
-  background-color: #0010CD;
-  color: white;
+  background-color: var(--blue-form-color);
+  color: var(--primary-color);
 }
 
 .contact__icon{

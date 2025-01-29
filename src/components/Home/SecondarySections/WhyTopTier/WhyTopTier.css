@@ -16,7 +16,7 @@
 
 .whytoptier__p{
     font-size: 1.4rem;
-    color: black;
+    color: var(--black-color);
     width: 80rem;
     height: auto;
     margin-top: 3rem;

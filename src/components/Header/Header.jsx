@@ -7,7 +7,7 @@ import navLogo from '../../assets/toptierlogo1.avif';
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  //Framer Motion Variants//
+  // Framer Motion Variants //
   const openNavAnimation = {
     open: {
       left: '0',
@@ -56,7 +56,7 @@ function Header() {
       {/* ul for Mobile Mode */}
       <motion.ul
         className='nav__ul__mobile'
-        /*Framer Motions Attributes*/
+        /* Framer Motions Attributes */
         variants={openNavAnimation}
         animate={isNavOpen ? 'open' : 'close'}
       >
