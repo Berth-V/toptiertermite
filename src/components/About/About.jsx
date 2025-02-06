@@ -10,16 +10,16 @@ function About() {
   }, [location]);
   return (
     <div className='about'>
-      <div className='about__section1'>
+      <div className='about__container'>
         <motion.div
-          className='about__img1__container'
+          className='about__img__box'
           /* Framer Motion Attributes */
           initial='false'
           animate={{rotateY: [0, 360, 0]}}
           transition={{delay: 0.5}}
         >
           <img
-            className='about__img1'
+            className='about__img'
             src={about1}
             alt='Termite Control About Us'
           />

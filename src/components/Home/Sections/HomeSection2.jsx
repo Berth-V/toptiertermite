@@ -20,7 +20,7 @@ function HomeSection2() {
         viewport={{once: true, amount: 0.2}}
       >
         <motion.div
-          className='home__section2__card blue--card'
+          className='home__section2__card section2--blue--card'
           /* Framer Motion Attributes */
           variants={section2Animation}
         >
@@ -29,9 +29,11 @@ function HomeSection2() {
             src={eco}
             alt='eco friendly logo'
           />
-          <div className='home__section2__text blue--card--text'>
-            <h3 className='home__section2__h3 blue--card--h3'>Eco-Friendly</h3>
-            <p className='home__section2__p blue--card--p'>
+          <div className='home__section2__text section2--blue--card--text'>
+            <h3 className='home__section2__h3 section2--blue--card--h3'>
+              Eco-Friendly
+            </h3>
+            <p className='home__section2__p section2--blue--card--p'>
               Our Eco-friendly termite treatments are designed to be safe for
               your family, pets, and the environment, while still being highly
               effective against termites. We offer a wide variety of green
@@ -39,7 +41,7 @@ function HomeSection2() {
             </p>
             <br />
             <Link
-              className='home__section2__btn blue--card--btn'
+              className='home__section2__btn section2--black--btn'
               to='/services#eco'
             >
               Learn More
@@ -121,7 +123,7 @@ function HomeSection2() {
           </div>
         </motion.div>
         <motion.div
-          className='home__section2__card blue--card'
+          className='home__section2__card section2--blue--card'
           /* Framer Motion Attributes */
           variants={section2Animation}
         >
@@ -130,11 +132,11 @@ function HomeSection2() {
             src={structural}
             alt='structural repairs logo'
           />
-          <div className='home__section2__text blue--card--text'>
-            <h3 className='home__section2__h3 blue--card--h3'>
+          <div className='home__section2__text section2--blue--card--text'>
+            <h3 className='home__section2__h3 section2--blue--card--h3'>
               Structural Repairs
             </h3>
-            <p className='home__section2__p blue--card--p'>
+            <p className='home__section2__p section2--blue--card--p'>
               Are you worried about the structural integrity of your property?
               Do you suspect that termites, fungus, or water damage have
               compromised the safety of your home or business? If so, our team
@@ -142,7 +144,7 @@ function HomeSection2() {
             </p>
             <br />
             <Link
-              className='home__section2__btn blue--card--btn'
+              className='home__section2__btn section2--black--btn'
               to='/services#struc'
             >
               Learn More
@@ -150,7 +152,7 @@ function HomeSection2() {
           </div>
         </motion.div>
         <motion.div
-          className='home__section2__card blue--card'
+          className='home__section2__card section2--blue--card'
           /* Framer Motion Attributes */
           variants={section2Animation}
         >
@@ -159,11 +161,11 @@ function HomeSection2() {
             src={preventative}
             alt='top tier termite control preventative treatment logo'
           />
-          <div className='home__section2__text blue--card--text'>
-            <h3 className='home__section2__h3 blue--card--h3'>
+          <div className='home__section2__text section2--blue--card--text'>
+            <h3 className='home__section2__h3 section2--blue--card--h3'>
               Preventative Treatment
             </h3>
-            <p className='home__section2__p blue--card--p'>
+            <p className='home__section2__p section2--blue--card--p'>
               Without effective proactive control measures, infestations can
               escalate rapidly, leading to significant repair costs and
               potential safety hazards. That&apos;s why it&apos;s important to
@@ -171,7 +173,7 @@ function HomeSection2() {
             </p>
             <br />
             <Link
-              className='home__section2__btn blue--card--btn'
+              className='home__section2__btn section2--black--btn'
               to='/services#prev'
             >
               Learn More

@@ -34,35 +34,35 @@ function HomeSection4() {
           home with Top-Tier Termite Control
         </p>
       </div>
-      <div className='home__section4__card   home__section4__card--blue--card'>
+      <div className='home__section4__card section4--blue--card'>
         <img
-          className='home__section4__img home__section4__img--blue--card'
+          className='home__section4__img section4--blue--card--img'
           src={solution}
           alt=''
         />
-        <h3 className='home__section4__h3 home__section4__h3--blue--card--h3'>
+        <h3 className='home__section4__h3 section4--blue--card--h3'>
           Advanced <br />
           Solutions
         </h3>
-        <div className='home__section4__box--blue--card--box'>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+        <div className='home__section4__box section4--blue--card--box'>
+          <span className='home__section4__span section4--blue--card--span'>
+            <FaCheck className='home__section4__icon  section4--blue--card--icon' />
             Non Tenting
           </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+          <span className='home__section4__span section4--blue--card--span'>
+            <FaCheck className='home__section4__icon  section4--blue--card--icon' />
             Eco-Friendly
           </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+          <span className='home__section4__span section4--blue--card--span'>
+            <FaCheck className='home__section4__icon  section4--blue--card--icon' />
             Structural Repairs
           </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+          <span className='home__section4__span section4--blue--card--span'>
+            <FaCheck className='home__section4__icon  section4--blue--card--icon' />
             Subterranean Termites
           </span>
-          <span className='home__section4__span home__section4__span--blue--card--span'>
-            <FaCheck className='home__section4__icon  home__section4__icon--blue--card--icon' />
+          <span className='home__section4__span section4--blue--card--span'>
+            <FaCheck className='home__section4__icon  section4--blue--card--icon' />
             Preventative Treatment
           </span>
         </div>

@@ -1,11 +1,8 @@
+import Links from './Links';
 import '../Contact/Contact.css';
-import {useEffect} from 'react';
-import {IoLogoWhatsapp} from 'react-icons/io';
-import {RiInstagramFill} from 'react-icons/ri';
-import {MdEmail} from 'react-icons/md';
-import {motion} from 'framer-motion';
-import {NavLink} from 'react-router-dom';
 import useForm from '../../customHooks/useForm';
+import {useEffect} from 'react';
+import {motion} from 'framer-motion';
 
 function Contact() {
   useEffect(() => {
@@ -76,33 +73,8 @@ function Contact() {
             {error[1]}
           </div>
         ) : null}
-        {/* Contact Section */}
-        <div className='contact__info'>
-          <span className='contact__span'>Phone: +1 888-360-9591</span>
-          <div className='contact__icon__box'>
-            <NavLink
-              className='icon__item'
-              to='https://wa.me/18584629226'
-              target='blank'
-            >
-              <IoLogoWhatsapp className='contact__icon' />
-            </NavLink>
-            <NavLink
-              className='icon__item'
-              to='https://www.instagram.com/toptiertermite/'
-              target='blank'
-            >
-              <RiInstagramFill className='contact__icon' />
-            </NavLink>
-            <NavLink
-              className='icon__item'
-              to='mailto:office@toptiertermite.com'
-              target='blank'
-            >
-              <MdEmail className='contact__icon' />
-            </NavLink>
-          </div>
-        </div>
+        {/* Links Section */}
+        <Links />
       </form>
     </motion.div>
   );

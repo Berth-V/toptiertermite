@@ -5,10 +5,10 @@ function ScrollToAnchor() {
   const location = useLocation();
   const lastHash = useRef('');
 
-  // listen to location change using useEffect with location as dependency
+  // listen to location change using useEffect with location as dependency //
   useEffect(() => {
     if (location.hash) {
-      lastHash.current = location.hash.slice(1); // safe hash for further use after navigation
+      lastHash.current = location.hash.slice(1); // safe hash for further use after navigation //
     }
 
     if (lastHash.current && document.getElementById(lastHash.current)) {

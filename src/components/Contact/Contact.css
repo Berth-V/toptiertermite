@@ -32,6 +32,8 @@
   background: unset;
   color: var(--primary-color);
   border-bottom: .1rem solid var(--gray-form-color);
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
 }
 
 .form__input::placeholder{
@@ -40,7 +42,7 @@
 
 .form__input:focus{
   outline: none;
-  border-bottom: .1rem solid var(--blue-form-color);
+  border-bottom: .14rem solid var(--blue-form-color);
 }
 
 .form__input--message{
@@ -52,14 +54,17 @@
   font-size: 1rem;
   background: unset;
   border-bottom: .1rem solid var(--gray-form-color);
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
 }
+
 .form__input--message::placeholder{
   color: var(--gray-form-color);
 }
 
 .form__input--message:focus{
   outline: none;
-  border-bottom: .1rem solid var(--blue-form-color);
+  border-bottom: .14rem solid var(--blue-form-color);
 }
 
 .form__submit{
@@ -71,6 +76,7 @@
   transition-timing-function: ease-out;
   transition-duration: .2s;
   background-color: var(--blue-form-color);
+  color: var(--primary-color);
 }
 
 .form__submit:hover{
@@ -78,6 +84,8 @@
   background-color: var(--primary-color);
   cursor: pointer;
 }
+
+/* Links Component */
 
 .contact__info{
   margin-top: 1.5rem;
@@ -100,7 +108,7 @@
   justify-content: space-evenly;
 }
 
-.icon__item{
+.contact__item{
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -113,7 +121,7 @@
   transition-duration: .3s;
 }
 
-.icon__item:hover{
+.contact__item:hover{
   background-color: var(--blue-form-color);
   color: var(--primary-color);
 }
@@ -153,6 +161,8 @@
     .form__submit{
       font-size: 1rem;
     }
+
+    /* Links Component */
     
     .contact__info{
       width: 95vw;
@@ -166,7 +176,7 @@
       width: 13rem;
     }
 
-    .icon__item{
+    .contact__item{
       width: 3rem;
       height: 3rem;
     }
